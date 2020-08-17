@@ -1,5 +1,5 @@
 # Project exclude paths
-/languages/Petrinet/classes_gen/
-/languages/Petrinet/generator/classes_gen/
-/languages/Petrinet/runtime/classes_gen/
-/languages/Petrinet/sandbox/classes_gen/
+classes_gen
+source_gen
+source_gen.caches
+workspace.xml
