@@ -1,11 +1,14 @@
 TODO list for development of Petrinet in MPS
-- use consistent styles
 - create textgen
 - create text input (copy in)
-- build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT brdige, WatchProviderContext, IDebugStrategy
+- build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
   - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
   - stack frames? define by structure of statements
   - watches: hide system-level variables?
 - Introduce unit tests
 - create plugin / standalone
+- editor: make sure it works with only typing
+- editor: recheck context menu
+- add possibility to comment lines
+- better handling of empty transition in/out lists

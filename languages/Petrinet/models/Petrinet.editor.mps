@@ -10,6 +10,7 @@
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" />
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -56,6 +57,16 @@
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -66,6 +77,7 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
@@ -89,6 +101,9 @@
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="2314756748950088783" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableReference" flags="ng" index="3yx0qK" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -127,6 +142,9 @@
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
+      </concept>
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -661,6 +679,7 @@
       </node>
       <node concept="3F0A7n" id="7RBOOWUvxac" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="3Fdme433YCg" resolve="Name" />
       </node>
       <node concept="3F0ifn" id="7RBOOWUvxad" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -714,6 +733,7 @@
       </node>
       <node concept="3F0A7n" id="7RBOOWUvAJi" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="3Fdme434BEx" resolve="NameDef" />
         <node concept="A1WHu" id="3VLa4eHhKA5" role="3vIgyS">
           <ref role="A1WHt" node="3VLa4eHhJuA" resolve="enableTyping_Place_ext_1" />
         </node>
@@ -733,6 +753,7 @@
       </node>
       <node concept="3F0A7n" id="7RBOOWUvAJq" role="3EZMnx">
         <ref role="1NtTu8" to="m6ps:7VNGhBBlvl5" resolve="tokens" />
+        <ref role="1k5W1q" node="3Fdme434dFc" resolve="Number" />
         <node concept="A1WHu" id="3VLa4eHhKAe" role="3vIgyS">
           <ref role="A1WHt" node="3VLa4eHhJuZ" resolve="enableTyping_Place_ext_2" />
         </node>
@@ -758,6 +779,7 @@
           <node concept="3F0A7n" id="2_lTqLe0JPA" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="3Fdme433YCg" resolve="Name" />
           </node>
         </node>
         <node concept="A1WHu" id="3VLa4eHhKA2" role="3vIgyS">
@@ -771,16 +793,21 @@
     <node concept="3EZMnI" id="2_lTqLe0JNT" role="2wV5jI">
       <node concept="3F0ifn" id="2_lTqLe0KEt" role="3EZMnx">
         <property role="3F0ifm" value="transition" />
+        <ref role="1k5W1q" node="3Fdme433YC2" resolve="Keyword" />
       </node>
       <node concept="l2Vlx" id="2_lTqLe0JNU" role="2iSdaV" />
       <node concept="3F0A7n" id="2_lTqLe0JNW" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="3Fdme434BEx" resolve="NameDef" />
         <node concept="A1WHu" id="3VLa4eHhKA8" role="3vIgyS">
           <ref role="A1WHt" node="3VLa4eHhJxg" resolve="enableTyping" />
         </node>
       </node>
       <node concept="3F0ifn" id="2_lTqLe0JPd" role="3EZMnx">
         <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="3Fdme434s_R" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="2_lTqLe0JNY" role="3EZMnx">
         <property role="2czwfO" value="," />
@@ -798,6 +825,40 @@
         <node concept="2SqB2G" id="3yp7F__ZoEj" role="2SqHTX">
           <property role="TrG5h" value="PlaceHolder" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="V5hpn" id="3Fdme433YC1">
+    <property role="TrG5h" value="PN_Style" />
+    <node concept="14StLt" id="3Fdme433YC2" role="V601i">
+      <property role="TrG5h" value="Keyword" />
+      <node concept="3Xmtl4" id="3Fdme433YC4" role="3F10Kt">
+        <node concept="1wgc9g" id="3Fdme433YC8" role="3XvnJa">
+          <ref role="1wgcnl" to="tpco:16zq0OE7Du4" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="3Fdme433YCg" role="V601i">
+      <property role="TrG5h" value="Name" />
+      <node concept="VechU" id="3Fdme433YPA" role="3F10Kt">
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
+      </node>
+    </node>
+    <node concept="14StLt" id="3Fdme434dFc" role="V601i">
+      <property role="TrG5h" value="Number" />
+      <node concept="VechU" id="3Fdme434dFm" role="3F10Kt">
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
+      </node>
+    </node>
+    <node concept="14StLt" id="3Fdme434BEx" role="V601i">
+      <property role="TrG5h" value="NameDef" />
+      <node concept="3Xmtl4" id="3Fdme434BEF" role="3F10Kt">
+        <node concept="1wgc9g" id="3Fdme434BEJ" role="3XvnJa">
+          <ref role="1wgcnl" node="3Fdme433YCg" resolve="Name" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="3Fdme434BEQ" role="3F10Kt">
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
     </node>
   </node>
