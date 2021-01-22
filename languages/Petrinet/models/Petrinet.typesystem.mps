@@ -188,7 +188,7 @@
         <node concept="3clFbS" id="6dV6VssfMS7" role="3clFbx">
           <node concept="2MkqsV" id="6dV6VssfMS8" role="3cqZAp">
             <node concept="Xl_RD" id="6dV6VssfMS9" role="2MkJ7o">
-              <property role="Xl_RC" value="Transition name appears more than once" />
+              <property role="Xl_RC" value="Place name appears more than once" />
             </node>
             <node concept="1YBJjd" id="6dV6VssfP7p" role="1urrMF">
               <ref role="1YBMHb" node="6yPxVyPEnCJ" resolve="place" />
