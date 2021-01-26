@@ -1,12 +1,17 @@
 TODO list for development of Petrinet in MPS
+- create philosophers
 - create textgen
+--> You can have both as part of the same language. In that case the generator will take precedence and the TextGen will have no effect. With a generator plan you can control the generation process and skip the generator in favor of TextGen.
 - create text input (copy in)
+--> You can create an action that reads the file and then using smodel builds the necessary models.
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
   - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
   - stack frames? define by structure of statements
   - watches: hide system-level variables?
+--> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targetting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
 - Introduce unit tests
+--> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone
 - editor: make sure it works with only typing
 - editor: recheck context menu
