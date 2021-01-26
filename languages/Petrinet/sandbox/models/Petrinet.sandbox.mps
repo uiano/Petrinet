@@ -151,5 +151,173 @@
       </node>
     </node>
   </node>
+  <node concept="17AsaI" id="3Fdme43ywXQ">
+    <property role="TrG5h" value="DiningPhilosophers_3" />
+    <node concept="2pD$ho" id="3Fdme43ywXT" role="17AsaH">
+      <property role="TrG5h" value="platonThinking" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywZd" role="17AsaH">
+      <property role="TrG5h" value="platonHungry" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywXZ" role="17AsaH">
+      <property role="TrG5h" value="platonEating" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywY7" role="17AsaH">
+      <property role="TrG5h" value="aristotleThinking" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywZx" role="17AsaH">
+      <property role="TrG5h" value="aristotleHungry" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywYh" role="17AsaH">
+      <property role="TrG5h" value="aristotleEating" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywYt" role="17AsaH">
+      <property role="TrG5h" value="socratesThinking" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywZR" role="17AsaH">
+      <property role="TrG5h" value="socratesHungry" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywYF" role="17AsaH">
+      <property role="TrG5h" value="socratesEating" />
+      <property role="2pD$hs" value="0" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43ywYV" role="17AsaH">
+      <property role="TrG5h" value="forkAS" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43yx0f" role="17AsaH">
+      <property role="TrG5h" value="forkSP" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="2pD$ho" id="3Fdme43yx0D" role="17AsaH">
+      <property role="TrG5h" value="forkPA" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx15" role="17AsaH">
+      <property role="TrG5h" value="platonBecomeHungry" />
+      <node concept="1BlLBn" id="3Fdme43yx1m" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywXT" resolve="platonThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx1p" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywZd" resolve="platonHungry" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx1G" role="17AsaH">
+      <property role="TrG5h" value="platonAcquireForks" />
+      <node concept="1BlLBn" id="3Fdme43yx20" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywZd" resolve="platonHungry" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx3m" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx3u" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx2m" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywXZ" resolve="platonEating" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx2C" role="17AsaH">
+      <property role="TrG5h" value="platonReleaseForks" />
+      <node concept="1BlLBn" id="3Fdme43yx2Z" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywXZ" resolve="platonEating" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx31" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywXT" resolve="platonThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx36" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx3e" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx41" role="17AsaH">
+      <property role="TrG5h" value="aristotleBecomeHungry" />
+      <node concept="1BlLBn" id="3Fdme43yx6D" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywY7" resolve="aristotleThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx6G" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywZx" resolve="aristotleHungry" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx44" role="17AsaH">
+      <property role="TrG5h" value="aristotleAcquireForks" />
+      <node concept="1BlLBn" id="3Fdme43yx6J" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywZx" resolve="aristotleHungry" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx46" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx47" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx6O" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywYh" resolve="aristotleEating" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx49" role="17AsaH">
+      <property role="TrG5h" value="aristotleReleaseForks" />
+      <node concept="1BlLBn" id="3Fdme43yx6R" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywYh" resolve="aristotleEating" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx6U" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywY7" resolve="aristotleThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx4c" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx4d" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx4P" role="17AsaH">
+      <property role="TrG5h" value="socratesBecomeHungry" />
+      <node concept="1BlLBn" id="3Fdme43yx72" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywYt" resolve="socratesThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx6Z" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywZR" resolve="socratesHungry" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx4S" role="17AsaH">
+      <property role="TrG5h" value="socratesAcquireForks" />
+      <node concept="1BlLBn" id="3Fdme43yx75" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywZR" resolve="socratesHungry" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx4U" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx4V" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx7a" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywYF" resolve="socratesEating" />
+      </node>
+    </node>
+    <node concept="1BlLYo" id="3Fdme43yx4X" role="17AsaH">
+      <property role="TrG5h" value="socratesReleaseForks" />
+      <node concept="1BlLBn" id="3Fdme43yx7d" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywYF" resolve="socratesEating" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx7g" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywYt" resolve="socratesThinking" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx50" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      </node>
+      <node concept="1BlLBn" id="3Fdme43yx51" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      </node>
+    </node>
+  </node>
 </model>
 
