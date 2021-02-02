@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="PetrinetDev" uuid="d00cb95e-ed5a-4c2d-b420-7f7f8e90ff34">
+  <exported-language name="8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)" />
+  <exported-solutions>
+    <exported-solution>8329db87-0c72-44d8-a648-97d2710c7616(Petrinet.tools)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:5fa733a3-958f-4335-8d5b-78454f7bbad9(generationplan)" />
+</dev-kit>
+
