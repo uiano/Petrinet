@@ -16,9 +16,6 @@
       <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
         <child id="2944629966652439181" name="languages" index="1t_9vn" />
       </concept>
-      <concept id="3167863533095527371" name="jetbrains.mps.lang.generator.plan.structure.Fork" flags="ng" index="10T23i">
-        <reference id="3167863533095527372" name="plan" index="10T23l" />
-      </concept>
       <concept id="2959971211779300533" name="jetbrains.mps.lang.generator.plan.structure.TextDocLine" flags="ng" index="16rNan">
         <property id="2959971211779300563" name="text" index="16rNbL" />
       </concept>
@@ -40,9 +37,6 @@
   </registry>
   <node concept="2VgMpV" id="_0vgmL8g$n">
     <property role="TrG5h" value="PetrinetTextGen" />
-    <node concept="10T23i" id="3Fdme43yHyp" role="2VgMA7">
-      <ref role="10T23l" to="6r9f:3Fdme43yHyy" resolve="PetrinetJavaGen" />
-    </node>
     <node concept="1ONwER" id="3Fdme43_QZm" role="2VgMA7">
       <node concept="16rNan" id="3Fdme43_QZu" role="1ONSkY">
         <property role="16rNbL" value="creating text output" />
