@@ -1,6 +1,6 @@
 TODO list for development of Petrinet in MPS
-- create textgen
---> You can have both as part of the same language. In that case the generator will take precedence and the TextGen will have no effect. With a generator plan you can control the generation process and skip the generator in favor of TextGen.
+- complete textgen
+- make textgen work with devkit
 - create text input (copy in)
 --> You can create an action that reads the file and then using smodel builds the necessary models.
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
