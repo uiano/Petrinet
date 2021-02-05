@@ -257,8 +257,8 @@
       <node concept="1BlLBn" id="3Fdme43yx46" role="1BlL$W">
         <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
       </node>
-      <node concept="1BlLBn" id="3Fdme43yx47" role="1BlL$W">
-        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      <node concept="1BlLBn" id="3Fdme43Uf_p" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywYV" resolve="forkAS" />
       </node>
       <node concept="1BlLBn" id="3Fdme43yx6O" role="1BlL$Y">
         <ref role="1BlLBg" node="3Fdme43ywYh" resolve="aristotleEating" />
@@ -275,8 +275,8 @@
       <node concept="1BlLBn" id="3Fdme43yx4c" role="1BlL$Y">
         <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
       </node>
-      <node concept="1BlLBn" id="3Fdme43yx4d" role="1BlL$Y">
-        <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
+      <node concept="1BlLBn" id="3Fdme43Uf_z" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywYV" resolve="forkAS" />
       </node>
     </node>
     <node concept="1BlLYo" id="3Fdme43yx4P" role="17AsaH">
@@ -293,8 +293,8 @@
       <node concept="1BlLBn" id="3Fdme43yx75" role="1BlL$W">
         <ref role="1BlLBg" node="3Fdme43ywZR" resolve="socratesHungry" />
       </node>
-      <node concept="1BlLBn" id="3Fdme43yx4U" role="1BlL$W">
-        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      <node concept="1BlLBn" id="3Fdme43Uf_u" role="1BlL$W">
+        <ref role="1BlLBg" node="3Fdme43ywYV" resolve="forkAS" />
       </node>
       <node concept="1BlLBn" id="3Fdme43yx4V" role="1BlL$W">
         <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
@@ -311,8 +311,8 @@
       <node concept="1BlLBn" id="3Fdme43yx7g" role="1BlL$Y">
         <ref role="1BlLBg" node="3Fdme43ywYt" resolve="socratesThinking" />
       </node>
-      <node concept="1BlLBn" id="3Fdme43yx50" role="1BlL$Y">
-        <ref role="1BlLBg" node="3Fdme43yx0D" resolve="forkPA" />
+      <node concept="1BlLBn" id="3Fdme43Uf_C" role="1BlL$Y">
+        <ref role="1BlLBg" node="3Fdme43ywYV" resolve="forkAS" />
       </node>
       <node concept="1BlLBn" id="3Fdme43yx51" role="1BlL$Y">
         <ref role="1BlLBg" node="3Fdme43yx0f" resolve="forkSP" />
