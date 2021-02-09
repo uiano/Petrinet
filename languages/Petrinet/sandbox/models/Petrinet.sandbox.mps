@@ -2,7 +2,7 @@
 <model ref="r:5cad1d4f-3fce-488f-b23a-2b2b6f186998(Petrinet.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="8b3711d4-03f0-437a-8056-ae4574191c5e" name="Petrinet" version="0" />
+    <devkit ref="d00cb95e-ed5a-4c2d-b420-7f7f8e90ff34(PetrinetDev)" />
   </languages>
   <imports />
   <registry>

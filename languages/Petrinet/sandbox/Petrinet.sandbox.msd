@@ -9,11 +9,11 @@
     <facet type="java" languageLevel="JAVA_8">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
-    <facet planModel="r:5fa733a3-958f-4335-8d5b-78454f7bbad9(generationplanAll)" type="generator" />
   </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">8329db87-0c72-44d8-a648-97d2710c7616(Petrinet.tools)</dependency>
+    <dependency reexport="false">d00cb95e-ed5a-4c2d-b420-7f7f8e90ff34(PetrinetDev)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:8b3711d4-03f0-437a-8056-ae4574191c5e:Petrinet" version="0" />
@@ -22,6 +22,7 @@
   <dependencyVersions>
     <module reference="45048812-4a5e-4036-bddb-00477f73062b(Petrinet.sandbox)" version="0" />
     <module reference="8329db87-0c72-44d8-a648-97d2710c7616(Petrinet.tools)" version="0" />
+    <module reference="d00cb95e-ed5a-4c2d-b420-7f7f8e90ff34(PetrinetDev)" version="0" />
   </dependencyVersions>
 </solution>
 

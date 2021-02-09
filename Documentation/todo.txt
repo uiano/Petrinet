@@ -1,5 +1,4 @@
 TODO list for development of Petrinet in MPS
-- make textgen work with devkit
 - create text input (copy in)
 --> You can create an action that reads the file and then using smodel builds the necessary models.
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
