@@ -1,6 +1,9 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
 --> You can create an action that reads the file and then using smodel builds the necessary models.
+--> find out which menu to use, maybe right-mouse context menu on solution? currently on Tools
+--> using https://github.com/petitparser/java-petitparser or https://javacc.github.io/javacc/
+--> maybe http://www2.cs.tum.edu/projects/cup/ and https://jflex.de/
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
   - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
@@ -10,6 +13,7 @@ TODO list for development of Petrinet in MPS
 - Introduce unit tests
 --> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone
+- create text output (copy out)
 - editor: make sure it works with only typing
 - editor: recheck context menu
 - add possibility to comment lines
