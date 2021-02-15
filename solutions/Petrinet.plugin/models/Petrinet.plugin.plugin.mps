@@ -5,19 +5,18 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -27,6 +26,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
+        <child id="1217413222820" name="parameter" index="1NuT2Z" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
@@ -38,6 +38,14 @@
       </concept>
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
+      <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
+      <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
+        <reference id="1217252646389" name="key" index="1DUlNI" />
+      </concept>
+      <concept id="1217252428768" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterReferenceOperation" flags="nn" index="1DTwFV" />
+      <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ng" index="1NuADB">
+        <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -130,6 +138,12 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
+      <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
+      <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
+        <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+    </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
         <property id="1863527487546097494" name="modelId" index="1XweGQ" />
@@ -144,6 +158,7 @@
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -198,7 +213,12 @@
   </node>
   <node concept="sE7Ow" id="3Fdme43z9lU">
     <property role="TrG5h" value="ImportPetrinet" />
-    <property role="2uzpH1" value="Import Petrinet text file" />
+    <property role="2uzpH1" value="Import Petrinet Text File" />
+    <node concept="1DS2jV" id="3Fdme44XLqh" role="1NuT2Z">
+      <property role="TrG5h" value="editorContext" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="3Fdme44XLqi" role="1oa70y" />
+    </node>
     <node concept="tnohg" id="3Fdme43z9lV" role="tncku">
       <node concept="3clFbS" id="3Fdme43z9lW" role="2VODD2">
         <node concept="3cpWs8" id="3Fdme44ltyi" role="3cqZAp">
@@ -431,22 +451,41 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3Fdme44XOtZ" role="3cqZAp">
+              <node concept="3cpWsn" id="3Fdme44XOu2" role="3cpWs9">
+                <property role="TrG5h" value="theModel" />
+                <node concept="2OqwBi" id="3Fdme44XORe" role="33vP2m">
+                  <node concept="1Xw6AR" id="3Fdme44XORf" role="2Oq$k0">
+                    <node concept="1dCxOl" id="3Fdme44XORg" role="1XwpL7">
+                      <property role="1XweGQ" value="r:5cad1d4f-3fce-488f-b23a-2b2b6f186998" />
+                      <node concept="1j_P7g" id="3Fdme44XORh" role="1j$8Uc">
+                        <property role="1j_P7h" value="Petrinet.sandbox" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2yCiCJ" id="3Fdme44XORi" role="2OqNvi">
+                    <node concept="2OqwBi" id="3Fdme44XORj" role="Vysub">
+                      <node concept="2OqwBi" id="3Fdme44XORk" role="2Oq$k0">
+                        <node concept="2WthIp" id="3Fdme44XORl" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="3Fdme44XORm" role="2OqNvi">
+                          <ref role="2WH_rO" node="3Fdme44XLqh" resolve="editorContext" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Fdme44XORn" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="H_c77" id="3Fdme44XOX_" role="1tU5fm" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="3Fdme44wiuE" role="3cqZAp">
               <node concept="3clFbS" id="3Fdme44wiuG" role="3clFbx">
                 <node concept="3clFbF" id="3Fdme44uCNU" role="3cqZAp">
                   <node concept="2OqwBi" id="3Fdme44uCNW" role="3clFbG">
-                    <node concept="2OqwBi" id="3Fdme44uCNX" role="2Oq$k0">
-                      <node concept="1Xw6AR" id="3Fdme44uCNY" role="2Oq$k0">
-                        <node concept="1dCxOl" id="3Fdme44uCNZ" role="1XwpL7">
-                          <property role="1XweGQ" value="r:5cad1d4f-3fce-488f-b23a-2b2b6f186998" />
-                          <node concept="1j_P7g" id="3Fdme44uCO0" role="1j$8Uc">
-                            <property role="1j_P7h" value="Petrinet.sandbox" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2yCiCJ" id="3Fdme44uCO1" role="2OqNvi">
-                        <node concept="10Nm6u" id="3Fdme44uCO2" role="Vysub" />
-                      </node>
+                    <node concept="37vLTw" id="3Fdme44XRXR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3Fdme44XOu2" resolve="theModel" />
                     </node>
                     <node concept="3BYIHo" id="3Fdme44uDba" role="2OqNvi">
                       <node concept="37vLTw" id="3Fdme44vke1" role="3BYIHq">
@@ -458,18 +497,8 @@
               </node>
               <node concept="2OqwBi" id="3Fdme44wlaG" role="3clFbw">
                 <node concept="2OqwBi" id="3Fdme44wiG8" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3Fdme44wiG9" role="2Oq$k0">
-                    <node concept="1Xw6AR" id="3Fdme44wiGa" role="2Oq$k0">
-                      <node concept="1dCxOl" id="3Fdme44wiGb" role="1XwpL7">
-                        <property role="1XweGQ" value="r:5cad1d4f-3fce-488f-b23a-2b2b6f186998" />
-                        <node concept="1j_P7g" id="3Fdme44wiGc" role="1j$8Uc">
-                          <property role="1j_P7h" value="Petrinet.sandbox" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2yCiCJ" id="3Fdme44wiGd" role="2OqNvi">
-                      <node concept="10Nm6u" id="3Fdme44wiGe" role="Vysub" />
-                    </node>
+                  <node concept="37vLTw" id="3Fdme44XRJG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3Fdme44XOu2" resolve="theModel" />
                   </node>
                   <node concept="2RRcyG" id="3Fdme44wiJc" role="2OqNvi">
                     <ref role="2RRcyH" to="m6ps:7RBOOWUvx7x" resolve="PetriNet" />
