@@ -4,12 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/external/java-cup-11b-runtime.jar!/" type="java_classes">
-      <sourceRoot location="." />
-    </modelRoot>
-    <modelRoot contentPath="${module}/external/sources" type="java_source_stubs">
-      <sourceRoot location="." />
-    </modelRoot>
   </models>
   <facets>
     <facet languageLevel="JAVA_8" type="java">
@@ -17,20 +11,22 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/external/java-cup-11b-runtime.jar" />
+    <stubModelEntry path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
   </stubModelEntries>
-  <sourcePath />
+  <sourcePath>
+    <source path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/sources" />
+  </sourcePath>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">a695f313-fb68-4d1b-99f9-b01f3baf1635(Petrinet.parser)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:fe9d76d7-5809-45c9-ae28-a40915b4d6ff:jetbrains.mps.lang.checkedName" version="1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
@@ -49,6 +45,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)" version="0" />
+    <module reference="a695f313-fb68-4d1b-99f9-b01f3baf1635(Petrinet.parser)" version="0" />
     <module reference="4b4417a8-ed63-41a0-9044-0b4e14591dae(Petrinet.plugin)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />

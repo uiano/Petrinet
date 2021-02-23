@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Petrinet/Petrinet.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Petrinet/runtime/Petrinet.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Petrinet/sandbox/Petrinet.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Petrinet.parser/Petrinet.parser.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Petrinet.plugin/Petrinet.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Petrinet.tools/Petrinet.tools.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/plugin/plugin.msd" folder="" />

@@ -12,8 +12,8 @@
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
-    <import index="2j9c" ref="4b4417a8-ed63-41a0-9044-0b4e14591dae/java:------------------------------------------------(Petrinet.plugin/)" />
-    <import index="5ea3" ref="4b4417a8-ed63-41a0-9044-0b4e14591dae/java:java_cup.runtime(Petrinet.plugin/)" />
+    <import index="5ea3" ref="a695f313-fb68-4d1b-99f9-b01f3baf1635/java:java_cup.runtime(Petrinet.parser/)" />
+    <import index="2j9c" ref="a695f313-fb68-4d1b-99f9-b01f3baf1635/java:------------------------------------------------(Petrinet.parser/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -480,71 +480,59 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3Fdme453PGj" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="3Fdme452_qG" role="8Wnug">
-                <node concept="3cpWsn" id="3Fdme452_qJ" role="3cpWs9">
-                  <property role="TrG5h" value="p" />
-                  <node concept="3uibUv" id="3Fdme452J6p" role="1tU5fm">
-                    <ref role="3uigEE" to="2j9c:~Parser" resolve="Parser" />
-                  </node>
-                  <node concept="2ShNRf" id="3Fdme452JfJ" role="33vP2m">
-                    <node concept="1pGfFk" id="3Fdme452JfC" role="2ShVmc">
-                      <ref role="37wK5l" to="2j9c:~Parser(java_cup.runtime.Scanner)" resolve="Parser" />
-                      <node concept="2ShNRf" id="3Fdme452Mwd" role="37wK5m">
-                        <node concept="HV5vD" id="3Fdme452Q6p" role="2ShVmc">
-                          <ref role="HV5vE" to="2j9c:~scanner" resolve="scanner" />
-                        </node>
+            <node concept="3cpWs8" id="6c1M1NWKS6D" role="3cqZAp">
+              <node concept="3cpWsn" id="6c1M1NWKS6E" role="3cpWs9">
+                <property role="TrG5h" value="p" />
+                <node concept="3uibUv" id="6c1M1NWKS6F" role="1tU5fm">
+                  <ref role="3uigEE" to="2j9c:~Parser" resolve="Parser" />
+                </node>
+                <node concept="2ShNRf" id="6c1M1NWKSie" role="33vP2m">
+                  <node concept="1pGfFk" id="6c1M1NWKZSS" role="2ShVmc">
+                    <ref role="37wK5l" to="2j9c:~Parser(java_cup.runtime.Scanner)" resolve="Parser" />
+                    <node concept="2ShNRf" id="6c1M1NWKZTL" role="37wK5m">
+                      <node concept="HV5vD" id="6c1M1NWL09w" role="2ShVmc">
+                        <ref role="HV5vE" to="2j9c:~scanner" resolve="scanner" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3Fdme453Qcu" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="3Fdme452Sj9" role="8Wnug">
-                <node concept="3cpWsn" id="3Fdme452Sja" role="3cpWs9">
-                  <property role="TrG5h" value="sc" />
-                  <node concept="3uibUv" id="3Fdme452Sjb" role="1tU5fm">
-                    <ref role="3uigEE" to="5ea3:~Scanner" resolve="Scanner" />
-                  </node>
-                  <node concept="2ShNRf" id="3Fdme452Sus" role="33vP2m">
-                    <node concept="HV5vD" id="3Fdme452SHQ" role="2ShVmc">
-                      <ref role="HV5vE" to="2j9c:~scanner" resolve="scanner" />
-                    </node>
+            <node concept="3cpWs8" id="6c1M1NWL1ag" role="3cqZAp">
+              <node concept="3cpWsn" id="6c1M1NWL1ah" role="3cpWs9">
+                <property role="TrG5h" value="sc" />
+                <node concept="3uibUv" id="6c1M1NWL1ai" role="1tU5fm">
+                  <ref role="3uigEE" to="5ea3:~Scanner" resolve="Scanner" />
+                </node>
+                <node concept="2ShNRf" id="6c1M1NWL1ma" role="33vP2m">
+                  <node concept="HV5vD" id="6c1M1NWL1_$" role="2ShVmc">
+                    <ref role="HV5vE" to="2j9c:~scanner" resolve="scanner" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3Fdme453QGI" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="3Fdme452VG9" role="8Wnug">
-                <node concept="3cpWsn" id="3Fdme452VGa" role="3cpWs9">
-                  <property role="TrG5h" value="lp" />
-                  <node concept="3uibUv" id="3Fdme452VGb" role="1tU5fm">
-                    <ref role="3uigEE" to="5ea3:~lr_parser" resolve="lr_parser" />
-                  </node>
-                  <node concept="2ShNRf" id="3Fdme452W4G" role="33vP2m">
-                    <node concept="1pGfFk" id="3Fdme452Wka" role="2ShVmc">
-                      <ref role="37wK5l" to="2j9c:~Parser()" resolve="Parser" />
-                    </node>
+            <node concept="3cpWs8" id="6c1M1NWL3Rv" role="3cqZAp">
+              <node concept="3cpWsn" id="6c1M1NWL3Rw" role="3cpWs9">
+                <property role="TrG5h" value="lp" />
+                <node concept="3uibUv" id="6c1M1NWL3Rx" role="1tU5fm">
+                  <ref role="3uigEE" to="5ea3:~lr_parser" resolve="lr_parser" />
+                </node>
+                <node concept="2ShNRf" id="6c1M1NWL436" role="33vP2m">
+                  <node concept="1pGfFk" id="6c1M1NWL4iw" role="2ShVmc">
+                    <ref role="37wK5l" to="2j9c:~Parser()" resolve="Parser" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3Fdme453QSX" role="lGtFl">
+            <node concept="1X3_iC" id="6c1M1NWL82$" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3Fdme452QAb" role="8Wnug">
-                <node concept="2OqwBi" id="3Fdme452R3a" role="3clFbG">
-                  <node concept="37vLTw" id="3Fdme452VUF" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3Fdme452VGa" resolve="lp" />
+              <node concept="3clFbF" id="6c1M1NWL4Qj" role="8Wnug">
+                <node concept="2OqwBi" id="6c1M1NWL5gN" role="3clFbG">
+                  <node concept="37vLTw" id="6c1M1NWL4Qh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6c1M1NWL3Rw" resolve="lp" />
                   </node>
-                  <node concept="liA8E" id="3Fdme452Wrm" role="2OqNvi">
+                  <node concept="liA8E" id="6c1M1NWL5AV" role="2OqNvi">
                     <ref role="37wK5l" to="5ea3:~lr_parser.parse()" resolve="parse" />
                   </node>
                 </node>
