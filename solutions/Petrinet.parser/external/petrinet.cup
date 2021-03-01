@@ -1,0 +1,57 @@
+import java_cup.runtime.*;
+
+/** Parser for Petri nets connected to MPS. */
+
+// Keywords
+terminal PETRINET;   // "petrinet"
+terminal PLACE;      // "place"
+terminal TRANSITION; // "transition"
+
+// Identifiers and Numbers
+terminal String IDENTIFIER; // name
+terminal Integer NUMBER;
+
+// Separators
+terminal OPEN_PAR;    // (
+terminal CLOSE_PAR;   // )
+terminal OPEN_BRACE;  // {
+terminal CLOSE_BRACE; // }
+terminal COLON;       // :
+terminal COMMA;       // ,
+terminal ARROW;       // =>
+
+// non-terminals
+non terminal petrinet;
+non terminal item_list;
+non terminal item;
+non terminal place;
+non terminal transition;
+non terminal place_ref;
+non terminal ref_list;
+
+// Grammar
+start with petrinet;
+
+// Rules
+petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list CLOSE_BRACE {: System.out.println("Petrinet " + n); :}
+    ;
+
+item_list ::= item_list item
+    | item
+    ;
+
+item ::= place
+    | transition ;
+
+place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR {: System.out.println("Place " + n + "(" + i + ")"); :}
+    ;
+
+transition ::= TRANSITION IDENTIFIER:n COLON ref_list ARROW ref_list {: System.out.println("Transition " + n); :}
+    ;
+
+ref_list ::= ref_list COMMA place_ref
+    | place_ref
+    ;
+
+place_ref ::= IDENTIFIER:n {: System.out.println("Reference " + n); :}
+    ;
