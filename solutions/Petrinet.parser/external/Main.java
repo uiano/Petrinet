@@ -17,7 +17,6 @@ class Main {
       return;
     }
     FileReader fr = new FileReader(chooser.getSelectedFile());
-    Lexer l = new Lexer(new StringReader("petrinet p { place x (0) }"));
     Lexer lex = new Lexer(fr);
     Parser p = new Parser(lex);
 	  p.parse();
