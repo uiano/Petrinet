@@ -10,10 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <stubModelEntries>
-    <stubModelEntry path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
-    <stubModelEntry path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/experiment.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
