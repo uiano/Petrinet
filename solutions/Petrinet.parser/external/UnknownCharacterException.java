@@ -1,4 +1,4 @@
-//package jflex.examples.minijava;
+package parser;
 
 class UnknownCharacterException extends Exception {
   UnknownCharacterException(String unknownInput) {

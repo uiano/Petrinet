@@ -1,3 +1,5 @@
+package parser;
+
 import java_cup.runtime.Symbol;
 
 /** Lexer of a Petri net language. */

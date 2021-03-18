@@ -1,3 +1,6 @@
+package parser;
+
+import java.util.ArrayList;
 import java_cup.runtime.*;
 
 /** Parser for Petri nets connected to MPS. */
@@ -21,37 +24,47 @@ terminal COMMA;       // ,
 terminal ARROW;       // =>
 
 // non-terminals
-non terminal petrinet;
-non terminal item_list;
-non terminal item;
-non terminal place;
-non terminal transition;
-non terminal place_ref;
-non terminal ref_list;
+non terminal java.util.ArrayList petrinet;
+non terminal java.util.ArrayList item_list;
+non terminal java.util.ArrayList item;
+non terminal java.util.ArrayList place;
+non terminal java.util.ArrayList transition;
+non terminal String place_ref;
+non terminal java.util.ArrayList ref_list;
 
 // Grammar
 start with petrinet;
 
 // Rules
-petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list CLOSE_BRACE {: System.out.println("Petrinet " + n); :}
+petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list:l CLOSE_BRACE 
+      {: ArrayList<Object> res = new ArrayList(); res.add("Petrinet"); res.add(n); res.add(l); RESULT = res; :}
     ;
 
-item_list ::= item_list item
-    | item
+item_list ::= item_list:l item:i
+      {: ArrayList<Object> res = new ArrayList(l); res.add(i); RESULT = res; :}
+    | item:i
+      {: ArrayList<Object> res = new ArrayList(); res.add(i); RESULT = res; :}
     ;
 
-item ::= place
-    | transition ;
-
-place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR {: System.out.println("Place " + n + "(" + i + ")"); :}
+item ::= place:p
+      {: RESULT = p; :}
+    | transition:t 
+      {: RESULT = t; :}
     ;
 
-transition ::= TRANSITION IDENTIFIER:n COLON ref_list ARROW ref_list {: System.out.println("Transition " + n); :}
+place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR
+      {: ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; :}
     ;
 
-ref_list ::= ref_list COMMA place_ref
-    | place_ref
+transition ::= TRANSITION IDENTIFIER:n COLON ref_list:in ARROW ref_list:out
+      {: ArrayList<Object> res = new ArrayList(); res.add("Transition"); res.add(n); res.add(in); res.add(out); RESULT = res; :}
     ;
 
-place_ref ::= IDENTIFIER:n {: System.out.println("Reference " + n); :}
+ref_list ::= ref_list:l COMMA place_ref:r
+      {: ArrayList<Object> res = new ArrayList(l); res.add(r); RESULT = res; :}
+    | place_ref:r
+      {: ArrayList<Object> res = new ArrayList(); res.add(r); RESULT = res; :}
+    ;
+
+place_ref ::= IDENTIFIER:n {: RESULT = n; :}
     ;

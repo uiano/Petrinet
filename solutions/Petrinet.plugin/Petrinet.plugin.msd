@@ -12,10 +12,9 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
+    <stubModelEntry path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/experiment.jar" />
   </stubModelEntries>
-  <sourcePath>
-    <source path="C:/Users/andreasp/MPSProjects/Petrinet/solutions/Petrinet.parser/external/sources" />
-  </sourcePath>
+  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)</dependency>

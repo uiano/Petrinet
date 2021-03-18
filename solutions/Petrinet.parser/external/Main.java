@@ -1,3 +1,5 @@
+package parser;
+
 import java_cup.runtime.*;
 import java.io.StringReader;
 import java.io.FileReader;
