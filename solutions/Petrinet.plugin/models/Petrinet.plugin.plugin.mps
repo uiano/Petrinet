@@ -1143,7 +1143,7 @@
                     </node>
                     <node concept="2ShNRf" id="6c1M1NXwzjE" role="33vP2m">
                       <node concept="1pGfFk" id="6c1M1NXwzAq" role="2ShVmc">
-                        <ref role="37wK5l" to="cw0v:~Lexer.&lt;init&gt;(java.io.Reader)" resolve="Lexer" />
+                        <ref role="37wK5l" to="cw0v:~Lexer(java.io.Reader)" resolve="Lexer" />
                         <node concept="37vLTw" id="6c1M1NXwzCh" role="37wK5m">
                           <ref role="3cqZAo" node="6c1M1NXwqFb" resolve="fr" />
                         </node>
@@ -1159,7 +1159,7 @@
                     </node>
                     <node concept="2ShNRf" id="6c1M1NXwxvQ" role="33vP2m">
                       <node concept="1pGfFk" id="6c1M1NXwxMo" role="2ShVmc">
-                        <ref role="37wK5l" to="cw0v:~Parser.&lt;init&gt;(java_cup.runtime.Scanner)" resolve="Parser" />
+                        <ref role="37wK5l" to="cw0v:~Parser(java_cup.runtime.Scanner)" resolve="Parser" />
                         <node concept="37vLTw" id="6c1M1NXwzcd" role="37wK5m">
                           <ref role="3cqZAo" node="6c1M1NXwyAv" resolve="lex" />
                         </node>
