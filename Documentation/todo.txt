@@ -1,9 +1,9 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
---> find out which menu to use, maybe right-mouse context menu on solution? currently on Tools
+--> put into context menu on solution importing the language
 --> auto-generate the java files from flex and cup
 --> use MPS creation routines directly in cup parser
---> clean the code
+--> find Petrinet text file in current module/model
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
   - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
@@ -19,3 +19,5 @@ TODO list for development of Petrinet in MPS
 - add possibility to comment lines
 - better handling of empty transition in/out lists
 - create 5 philosophers
+- add constraint that Petrinet names have to be distinct
+- add constraint that used places must come before transitions, maybe introduce order: first places, then transitions
