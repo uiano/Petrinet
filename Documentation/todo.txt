@@ -1,6 +1,5 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
---> put into context menu on solution importing the language
 --> auto-generate the java files from flex and cup
 --> use MPS creation routines directly in cup parser
 --> find Petrinet text file in current module/model
