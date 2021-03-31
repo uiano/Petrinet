@@ -30,4 +30,8 @@
   <target name="declare-mps-tasks" />
   
   <target name="makeDependents" />
+  
+  <target name="generateParser">
+    <java jar="p.jar" fork="true"></java>
+  </target>
 </project>
