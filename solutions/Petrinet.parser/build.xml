@@ -32,6 +32,11 @@
   <target name="makeDependents" />
   
   <target name="generateParser">
-    <java jar="p.jar" fork="true"></java>
+    <java jar="external/java-cup-11b.jar" fork="true" dir="src/parser">
+      <arg value="-interface" />
+      <arg value="-parser" />
+      <arg value="Parser" />
+      <arg value="../petrinet.cup" />
+    </java>
   </target>
 </project>

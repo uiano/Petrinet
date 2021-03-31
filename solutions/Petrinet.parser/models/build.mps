@@ -31,7 +31,6 @@
         <property id="6666499814681447926" name="attrName" index="2pNUuO" />
         <child id="6666499814681541918" name="value" index="2pMdts" />
       </concept>
-      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
@@ -73,14 +72,55 @@
               <node concept="2pNUuL" id="1Lslmnmt$_5" role="2pNNFR">
                 <property role="2pNUuO" value="jar" />
                 <node concept="2pMdtt" id="1Lslmnmt$_6" role="2pMdts">
-                  <property role="2pMdty" value="p.jar" />
+                  <property role="2pMdty" value="external/java-cup-11b.jar" />
                 </node>
               </node>
-              <node concept="3o6iSG" id="1Lslmnmt$$Z" role="3o6s8t" />
+              <node concept="2pNNFK" id="1LslmnmuuFj" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1LslmnmuuFC" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1LslmnmuuFD" role="2pMdts">
+                    <property role="2pMdty" value="-interface" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1Lslmnmvo_U" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1Lslmnmvo_V" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1Lslmnmvo_W" role="2pMdts">
+                    <property role="2pMdty" value="-parser" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1LslmnmwhTi" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1LslmnmwhTj" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1LslmnmwhTk" role="2pMdts">
+                    <property role="2pMdty" value="Parser" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1LslmnmvoA4" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1LslmnmvoA5" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1LslmnmvoA6" role="2pMdts">
+                    <property role="2pMdty" value="../petrinet.cup" />
+                  </node>
+                </node>
+              </node>
               <node concept="2pNUuL" id="1Lslmnmt$_h" role="2pNNFR">
                 <property role="2pNUuO" value="fork" />
                 <node concept="2pMdtt" id="1Lslmnmt$_i" role="2pMdts">
                   <property role="2pMdty" value="true" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1LslmnmxcIa" role="2pNNFR">
+                <property role="2pNUuO" value="dir" />
+                <node concept="2pMdtt" id="1LslmnmxcIb" role="2pMdts">
+                  <property role="2pMdty" value="src/parser" />
                 </node>
               </node>
             </node>
