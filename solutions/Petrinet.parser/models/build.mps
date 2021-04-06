@@ -126,6 +126,53 @@
             </node>
           </node>
         </node>
+        <node concept="2VaFvH" id="1Lslmnmy6lk" role="2VaFvJ">
+          <property role="TrG5h" value="generateFLEX" />
+          <node concept="2Vbh7Z" id="1Lslmnmy6ll" role="2VaTZU">
+            <node concept="2pNNFK" id="1Lslmnmy6lm" role="2Vbh7K">
+              <property role="2pNNFO" value="java" />
+              <node concept="2pNUuL" id="1Lslmnmy6ln" role="2pNNFR">
+                <property role="2pNUuO" value="jar" />
+                <node concept="2pMdtt" id="1Lslmnmy6lo" role="2pMdts">
+                  <property role="2pMdty" value="external/jflex-full-1.8.2.jar" />
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1Lslmnmyzit" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1LslmnmyziA" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1LslmnmyziB" role="2pMdts">
+                    <property role="2pMdty" value="-d" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1LslmnmyziM" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1LslmnmyziW" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1LslmnmyziX" role="2pMdts">
+                    <property role="2pMdty" value="src/parser" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNNFK" id="1Lslmnmy6ly" role="3o6s8t">
+                <property role="2pNNFO" value="arg" />
+                <node concept="2pNUuL" id="1Lslmnmy6lz" role="2pNNFR">
+                  <property role="2pNUuO" value="value" />
+                  <node concept="2pMdtt" id="1Lslmnmy6l$" role="2pMdts">
+                    <property role="2pMdty" value="src/petrinet.flex" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1Lslmnmy6l_" role="2pNNFR">
+                <property role="2pNUuO" value="fork" />
+                <node concept="2pMdtt" id="1Lslmnmy6lA" role="2pMdts">
+                  <property role="2pMdty" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

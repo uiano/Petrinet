@@ -38,5 +38,10 @@
       <arg value="Parser" />
       <arg value="../petrinet.cup" />
     </java>
+    <java jar="external/jflex-full-1.8.2.jar" fork="true">
+      <arg value="-d" />
+      <arg value="src/parser" />
+      <arg value="src/petrinet.flex" />
+    </java>
   </target>
 </project>

@@ -49,6 +49,7 @@
         <reference id="1203088061055" name="action" index="tCJdB" />
       </concept>
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1204992316090" name="point" index="2f8Tey" />
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
@@ -271,7 +272,7 @@
   </registry>
   <node concept="2DaZZR" id="3Fdme44i$Yg" />
   <node concept="tC5Ba" id="3Fdme43z9lQ">
-    <property role="TrG5h" value="ExportGroup" />
+    <property role="TrG5h" value="ImportGroup" />
     <node concept="ftmFs" id="3Fdme43ztT4" role="ftER_">
       <node concept="tCFHf" id="3Fdme43ztT7" role="ftvYc">
         <ref role="tCJdB" node="3Fdme43z9lU" resolve="ImportPetrinet" />
@@ -1638,6 +1639,146 @@
             <node concept="10M0yZ" id="3Fdme44lEoD" role="3uHU7w">
               <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
               <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="1Lslmnm$6PB">
+    <property role="TrG5h" value="BuildGroup" />
+    <node concept="ftmFs" id="1Lslmnm$6PC" role="ftER_">
+      <node concept="tCFHf" id="1Lslmnm_vT6" role="ftvYc">
+        <ref role="tCJdB" node="1Lslmnm$6PH" resolve="BuildParserFiles" />
+      </node>
+    </node>
+    <node concept="tT9cl" id="1Lslmnm$6PE" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
+    </node>
+    <node concept="tT9cl" id="1Lslmnm$6PF" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4HGL" resolve="ProjectActions" />
+      <ref role="2f8Tey" to="tprs:44Q0udIi4Db" resolve="make" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="1Lslmnm$6PH">
+    <property role="TrG5h" value="BuildParserFiles" />
+    <property role="2uzpH1" value="Build CUP and Flex Java Files" />
+    <property role="fJN8o" value="true" />
+    <node concept="1DS2jV" id="1Lslmnm$6US" role="1NuT2Z">
+      <property role="TrG5h" value="ideProject" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="1Lslmnm$6UT" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="1Lslmnm$6UU" role="tncku">
+      <node concept="3clFbS" id="1Lslmnm$6UV" role="2VODD2">
+        <node concept="3cpWs8" id="1Lslmnm$6UW" role="3cqZAp">
+          <node concept="3cpWsn" id="1Lslmnm$6UX" role="3cpWs9">
+            <property role="TrG5h" value="view" />
+            <node concept="3uibUv" id="1Lslmnm$6UY" role="1tU5fm">
+              <ref role="3uigEE" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
+            </node>
+            <node concept="2OqwBi" id="1Lslmnm$6UZ" role="33vP2m">
+              <node concept="2OqwBi" id="1Lslmnm$6V0" role="2Oq$k0">
+                <node concept="2WthIp" id="1Lslmnm$6V1" role="2Oq$k0" />
+                <node concept="1DTwFV" id="1Lslmnm$6V2" role="2OqNvi">
+                  <ref role="2WH_rO" node="1Lslmnm$6US" resolve="ideProject" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1Lslmnm$6V3" role="2OqNvi">
+                <ref role="37wK5l" to="1m72:~ComponentManager.getService(java.lang.Class)" resolve="getService" />
+                <node concept="3VsKOn" id="1Lslmnm$6V4" role="37wK5m">
+                  <ref role="3VsUkX" to="57ty:~MessagesViewTool" resolve="MessagesViewTool" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Lslmnm$6V5" role="3cqZAp">
+          <node concept="2OqwBi" id="1Lslmnm$6V6" role="3clFbG">
+            <node concept="37vLTw" id="1Lslmnm$6V7" role="2Oq$k0">
+              <ref role="3cqZAo" node="1Lslmnm$6UX" resolve="view" />
+            </node>
+            <node concept="liA8E" id="1Lslmnm$6V8" role="2OqNvi">
+              <ref role="37wK5l" to="57ty:~MessagesViewTool.clear(java.lang.String)" resolve="clear" />
+              <node concept="Xl_RD" id="1Lslmnm$6V9" role="37wK5m">
+                <property role="Xl_RC" value="Make" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1Lslmnm$6Va" role="3cqZAp">
+          <node concept="3cpWsn" id="1Lslmnm$6Vb" role="3cpWs9">
+            <property role="TrG5h" value="msg" />
+            <node concept="3uibUv" id="1Lslmnm$6Vc" role="1tU5fm">
+              <ref role="3uigEE" to="et5u:~IMessageHandler" resolve="IMessageHandler" />
+            </node>
+            <node concept="2OqwBi" id="1Lslmnm$6Vd" role="33vP2m">
+              <node concept="37vLTw" id="1Lslmnm$6Ve" role="2Oq$k0">
+                <ref role="3cqZAo" node="1Lslmnm$6UX" resolve="view" />
+              </node>
+              <node concept="liA8E" id="1Lslmnm$6Vf" role="2OqNvi">
+                <ref role="37wK5l" to="57ty:~MessagesViewTool.newHandler(java.lang.String)" resolve="newHandler" />
+                <node concept="Xl_RD" id="1Lslmnm$6Vg" role="37wK5m">
+                  <property role="Xl_RC" value="Make" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Lslmnm$xxf" role="3cqZAp">
+          <node concept="2OqwBi" id="1Lslmnm$xxg" role="3clFbG">
+            <node concept="37vLTw" id="1Lslmnm$xxh" role="2Oq$k0">
+              <ref role="3cqZAo" node="1Lslmnm$6Vb" resolve="msg" />
+            </node>
+            <node concept="liA8E" id="1Lslmnm$xxi" role="2OqNvi">
+              <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
+              <node concept="2ShNRf" id="1Lslmnm$xxj" role="37wK5m">
+                <node concept="1pGfFk" id="1Lslmnm$xxk" role="2ShVmc">
+                  <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                  <node concept="Rm8GO" id="1Lslmnm$xxl" role="37wK5m">
+                    <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
+                    <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
+                  </node>
+                  <node concept="Xl_RD" id="1Lslmnm$xxs" role="37wK5m">
+                    <property role="Xl_RC" value="Building Java files from CUP and Flex." />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1Lslmnm$A0h" role="3cqZAp">
+          <node concept="2OqwBi" id="1Lslmnm$A0i" role="3clFbG">
+            <node concept="37vLTw" id="1Lslmnm$A0j" role="2Oq$k0">
+              <ref role="3cqZAo" node="1Lslmnm$6Vb" resolve="msg" />
+            </node>
+            <node concept="liA8E" id="1Lslmnm$A0k" role="2OqNvi">
+              <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
+              <node concept="2ShNRf" id="1Lslmnm$A0l" role="37wK5m">
+                <node concept="1pGfFk" id="1Lslmnm$A0m" role="2ShVmc">
+                  <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                  <node concept="Rm8GO" id="1Lslmnm$A0n" role="37wK5m">
+                    <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
+                    <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
+                  </node>
+                  <node concept="3cpWs3" id="1Lslmnm$AwS" role="37wK5m">
+                    <node concept="Xl_RD" id="1Lslmnm$A0o" role="3uHU7B">
+                      <property role="Xl_RC" value="We are within project " />
+                    </node>
+                    <node concept="2OqwBi" id="1Lslmnm$B4p" role="3uHU7w">
+                      <node concept="2OqwBi" id="1Lslmnm$A$b" role="2Oq$k0">
+                        <node concept="2WthIp" id="1Lslmnm$A$e" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="1Lslmnm$A$g" role="2OqNvi">
+                          <ref role="2WH_rO" node="1Lslmnm$6US" resolve="ideProject" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1Lslmnm$Buv" role="2OqNvi">
+                        <ref role="37wK5l" to="4nm9:~Project.getName()" resolve="getName" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
