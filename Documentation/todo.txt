@@ -1,9 +1,9 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
 --> use MPS creation routines directly in cup parser
---> create an action that builds from flex and cup
+--> create an action that builds from flex and cup: beautify and get output from script run
 --> find Petrinet text file in current module/model
---> do we need UnknownCharacterException?
+--> for CUP/FLEX build, find script file in project (see mail Artem)
 - build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
   - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
