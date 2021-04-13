@@ -6,6 +6,8 @@
 package parser;
 
 import java.util.ArrayList;
+import src.StructureCreation;
+import org.jetbrains.mps.openapi.model.SNode;
 import java_cup.runtime.*;
 import java_cup.runtime.XMLElement;
 
@@ -230,7 +232,7 @@ class CUP$Parser$actions {
 		int ileft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int iright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
 		Integer i = (Integer)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		 ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; 
+		 SNode sn = StructureCreation.createPlace(n,i); ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("place",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-4)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;

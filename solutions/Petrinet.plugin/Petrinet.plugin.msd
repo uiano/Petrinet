@@ -19,6 +19,7 @@
     <dependency reexport="false">f3347d8a-0e79-4f35-8ac9-1574f25c986f(jetbrains.mps.execution.commands)</dependency>
     <dependency reexport="false">268ae620-360b-4da4-bb01-fad761632e6c(jetbrains.mps.ant.execution)</dependency>
     <dependency reexport="false">798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />

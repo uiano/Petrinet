@@ -1,6 +1,10 @@
 package parser;
 
+//old - should be removed
 import java.util.ArrayList;
+//new
+import src.StructureCreation;
+import org.jetbrains.mps.openapi.model.SNode;
 import java_cup.runtime.*;
 
 /** Parser for Petri nets connected to MPS. */
@@ -53,7 +57,7 @@ item ::= place:p
     ;
 
 place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR
-      {: ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; :}
+      {: SNode sn = StructureCreation.createPlace(n,i); ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; :}
     ;
 
 transition ::= TRANSITION IDENTIFIER:n COLON ref_list:in ARROW ref_list:out
