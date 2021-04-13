@@ -1,0 +1,37 @@
+petrinet DiningPhilosophers_5 {
+  place aristotleThinking (1)
+  place aristotleHungry (0) 
+  place aristotleEating (0) 
+  place socratesThinking (1) 
+  place socratesHungry (0) 
+  place socratesEating (0) 
+  place platoThinking (1)
+  place platoHungry (0)
+  place platoEating (0)
+  place kantThinking (1)
+  place kantHungry (0)
+  place kantEating (0)
+  place marxThinking (1)
+  place marxHungry (0)
+  place marxEating (0)
+  place forkAS (1)
+  place forkSP (1) 
+  place forkPK (1)
+  place forkKM (1)
+  place forkMA (1)
+  transition aristotleBecomeHungry: aristotleThinking => aristotleHungry
+  transition aristotleAcquireForks: aristotleHungry, forkMA, forkAS => aristotleEating
+  transition aristotleReleaseForks: aristotleEating => aristotleThinking, forkMA, forkAS
+  transition socratesBecomeHungry: socratesThinking => socratesHungry 
+  transition socratesAcquireForks: socratesHungry, forkAS, forkSP => socratesEating 
+  transition socratesReleaseForks: socratesEating => socratesThinking, forkAS, forkSP 
+  transition platoBecomeHungry: platoThinking => platoHungry
+  transition platoAcquireForks: platoHungry, forkSP, forkPK => platoEating
+  transition platoReleaseForks: platoEating => platoThinking, forkSP, forkPK
+  transition kantBecomeHungry: kantThinking => kantHungry
+  transition kantAcquireForks: kantHungry, forkPK, forkKM => kantEating
+  transition kantReleaseForks: kantEating => kantThinking, forkPK, forkKM
+  transition marxBecomeHungry: marxThinking => marxHungry
+  transition marxAcquireForks: marxHungry, forkKM, forkMA => marxEating
+  transition marxReleaseForks: marxEating => marxThinking, forkKM, forkMA
+}
