@@ -319,5 +319,8 @@
       </node>
     </node>
   </node>
+  <node concept="17AsaI" id="2R2Q_RhlB5F">
+    <property role="TrG5h" value="DiningPhilosophers_3" />
+  </node>
 </model>
 

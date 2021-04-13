@@ -5,9 +5,10 @@
 
 package parser;
 
-import java.util.ArrayList;
 import src.StructureCreation;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.List;
+import java.util.ArrayList;
 import java_cup.runtime.*;
 import java_cup.runtime.XMLElement;
 
@@ -148,7 +149,7 @@ class CUP$Parser$actions {
               Object RESULT =null;
 		int start_valleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int start_valright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
-		java.util.ArrayList start_val = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
+		SNode start_val = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
 		RESULT = start_val;
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("$START",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -159,14 +160,14 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 1: // petrinet ::= PETRINET IDENTIFIER OPEN_BRACE item_list CLOSE_BRACE 
             {
-              java.util.ArrayList RESULT =null;
+              SNode RESULT =null;
 		int nleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-3)).left;
 		int nright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-3)).right;
 		String n = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-3)).value;
 		int lleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int lright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
-		java.util.ArrayList l = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		 ArrayList<Object> res = new ArrayList(); res.add("Petrinet"); res.add(n); res.add(l); RESULT = res; 
+		List<SNode> l = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
+		 RESULT = StructureCreation.createPetrinet(n,l); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("petrinet",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-4)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -174,14 +175,14 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 2: // item_list ::= item_list item 
             {
-              java.util.ArrayList RESULT =null;
+              List<SNode> RESULT =null;
 		int lleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int lright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
-		java.util.ArrayList l = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
+		List<SNode> l = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
 		int ileft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int iright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		java.util.ArrayList i = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 ArrayList<Object> res = new ArrayList(l); res.add(i); RESULT = res; 
+		SNode i = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		 ArrayList<SNode> res = new ArrayList(l); res.add(i); RESULT = res; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("item_list",1, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -189,11 +190,11 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 3: // item_list ::= item 
             {
-              java.util.ArrayList RESULT =null;
+              List<SNode> RESULT =null;
 		int ileft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int iright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		java.util.ArrayList i = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 ArrayList<Object> res = new ArrayList(); res.add(i); RESULT = res; 
+		SNode i = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		 ArrayList<SNode> res = new ArrayList(); res.add(i); RESULT = res; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("item_list",1, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -201,10 +202,10 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 4: // item ::= place 
             {
-              java.util.ArrayList RESULT =null;
+              SNode RESULT =null;
 		int pleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int pright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		java.util.ArrayList p = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		SNode p = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
 		 RESULT = p; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("item",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -213,10 +214,10 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 5: // item ::= transition 
             {
-              java.util.ArrayList RESULT =null;
+              SNode RESULT =null;
 		int tleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int tright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		java.util.ArrayList t = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		SNode t = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
 		 RESULT = t; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("item",2, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -225,14 +226,14 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 6: // place ::= PLACE IDENTIFIER OPEN_PAR NUMBER CLOSE_PAR 
             {
-              java.util.ArrayList RESULT =null;
+              SNode RESULT =null;
 		int nleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-3)).left;
 		int nright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-3)).right;
 		String n = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-3)).value;
 		int ileft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).left;
 		int iright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).right;
 		Integer i = (Integer)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
-		 SNode sn = StructureCreation.createPlace(n,i); ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; 
+		 RESULT = StructureCreation.createPlace(n,i); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("place",3, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-4)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -240,17 +241,17 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 7: // transition ::= TRANSITION IDENTIFIER COLON ref_list ARROW ref_list 
             {
-              java.util.ArrayList RESULT =null;
+              SNode RESULT =null;
 		int nleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-4)).left;
 		int nright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-4)).right;
 		String n = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-4)).value;
 		int inleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
 		int inright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		java.util.ArrayList in = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		List<SNode> in = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
 		int outleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int outright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		java.util.ArrayList out = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 ArrayList<Object> res = new ArrayList(); res.add("Transition"); res.add(n); res.add(in); res.add(out); RESULT = res; 
+		List<SNode> out = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		 RESULT = StructureCreation.createTransition(n); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("transition",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-5)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -258,14 +259,14 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 8: // ref_list ::= ref_list COMMA place_ref 
             {
-              java.util.ArrayList RESULT =null;
+              List<SNode> RESULT =null;
 		int lleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).left;
 		int lright = ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)).right;
-		java.util.ArrayList l = (java.util.ArrayList)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
+		List<SNode> l = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-2)).value;
 		int rleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int rright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		String r = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 ArrayList<Object> res = new ArrayList(l); res.add(r); RESULT = res; 
+		SNode r = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		 RESULT = new ArrayList(l); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("ref_list",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -273,11 +274,11 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 9: // ref_list ::= place_ref 
             {
-              java.util.ArrayList RESULT =null;
+              List<SNode> RESULT =null;
 		int rleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int rright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
-		String r = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 ArrayList<Object> res = new ArrayList(); res.add(r); RESULT = res; 
+		SNode r = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
+		 RESULT = new ArrayList(); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("ref_list",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -285,11 +286,11 @@ class CUP$Parser$actions {
           /*. . . . . . . . . . . . . . . . . . . .*/
           case 10: // place_ref ::= IDENTIFIER 
             {
-              String RESULT =null;
+              SNode RESULT =null;
 		int nleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int nright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		String n = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 RESULT = n; 
+		 RESULT = null; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("place_ref",5, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;

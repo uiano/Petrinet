@@ -1,10 +1,9 @@
 package parser;
 
-//old - should be removed
-import java.util.ArrayList;
-//new
 import src.StructureCreation;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.List;
+import java.util.ArrayList;
 import java_cup.runtime.*;
 
 /** Parser for Petri nets connected to MPS. */
@@ -28,26 +27,26 @@ terminal COMMA;       // ,
 terminal ARROW;       // =>
 
 // non-terminals
-non terminal java.util.ArrayList petrinet;
-non terminal java.util.ArrayList item_list;
-non terminal java.util.ArrayList item;
-non terminal java.util.ArrayList place;
-non terminal java.util.ArrayList transition;
-non terminal String place_ref;
-non terminal java.util.ArrayList ref_list;
+non terminal SNode petrinet;
+non terminal List<SNode> item_list;
+non terminal SNode item;
+non terminal SNode place;
+non terminal SNode transition;
+non terminal SNode place_ref;
+non terminal List<SNode> ref_list;
 
 // Grammar
 start with petrinet;
 
 // Rules
 petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list:l CLOSE_BRACE 
-      {: ArrayList<Object> res = new ArrayList(); res.add("Petrinet"); res.add(n); res.add(l); RESULT = res; :}
+      {: RESULT = StructureCreation.createPetrinet(n,l); :}
     ;
 
 item_list ::= item_list:l item:i
-      {: ArrayList<Object> res = new ArrayList(l); res.add(i); RESULT = res; :}
+      {: ArrayList<SNode> res = new ArrayList(/*l*/); res.add(i); RESULT = res; :}
     | item:i
-      {: ArrayList<Object> res = new ArrayList(); res.add(i); RESULT = res; :}
+      {: ArrayList<SNode> res = new ArrayList(); res.add(i); RESULT = res; :}
     ;
 
 item ::= place:p
@@ -57,18 +56,18 @@ item ::= place:p
     ;
 
 place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR
-      {: SNode sn = StructureCreation.createPlace(n,i); ArrayList<Object> res = new ArrayList(); res.add("Place"); res.add(n); res.add(i); RESULT = res; :}
+      {: RESULT = StructureCreation.createPlace(n,i); :}
     ;
 
 transition ::= TRANSITION IDENTIFIER:n COLON ref_list:in ARROW ref_list:out
-      {: ArrayList<Object> res = new ArrayList(); res.add("Transition"); res.add(n); res.add(in); res.add(out); RESULT = res; :}
+      {: RESULT = StructureCreation.createTransition(n); :}
     ;
 
 ref_list ::= ref_list:l COMMA place_ref:r
-      {: ArrayList<Object> res = new ArrayList(l); res.add(r); RESULT = res; :}
+      {: RESULT = new ArrayList(); :}
     | place_ref:r
-      {: ArrayList<Object> res = new ArrayList(); res.add(r); RESULT = res; :}
+      {: RESULT = new ArrayList(); :}
     ;
 
-place_ref ::= IDENTIFIER:n {: RESULT = n; :}
+place_ref ::= IDENTIFIER:n {: RESULT = null; :}
     ;
