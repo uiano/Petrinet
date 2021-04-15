@@ -44,7 +44,7 @@ petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list:l CLOSE_BRACE
     ;
 
 item_list ::= item_list:l item:i
-      {: ArrayList<SNode> res = new ArrayList(/*l*/); res.add(i); RESULT = res; :}
+      {: ArrayList<SNode> res = new ArrayList(l); res.add(i); RESULT = res; :}
     | item:i
       {: ArrayList<SNode> res = new ArrayList(); res.add(i); RESULT = res; :}
     ;
@@ -60,14 +60,15 @@ place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR
     ;
 
 transition ::= TRANSITION IDENTIFIER:n COLON ref_list:in ARROW ref_list:out
-      {: RESULT = StructureCreation.createTransition(n); :}
+      {: RESULT = StructureCreation.createTransition(n,in,out); :}
     ;
 
 ref_list ::= ref_list:l COMMA place_ref:r
-      {: RESULT = new ArrayList(); :}
+      {: ArrayList<SNode> res = new ArrayList(l); res.add(r); RESULT = res; :}
     | place_ref:r
-      {: RESULT = new ArrayList(); :}
+      {: ArrayList<SNode> res = new ArrayList(); res.add(r); RESULT = res; :}
     ;
 
-place_ref ::= IDENTIFIER:n {: RESULT = null; :}
+place_ref ::= IDENTIFIER:n
+      {: RESULT = StructureCreation.createPlaceRef(n); :}
     ;

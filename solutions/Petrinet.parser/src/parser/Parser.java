@@ -251,7 +251,7 @@ class CUP$Parser$actions {
 		int outleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int outright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		List<SNode> out = (List<SNode>)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 RESULT = StructureCreation.createTransition(n); 
+		 RESULT = StructureCreation.createTransition(n,in,out); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("transition",4, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-5)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -266,7 +266,7 @@ class CUP$Parser$actions {
 		int rleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int rright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		SNode r = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 RESULT = new ArrayList(l); 
+		 ArrayList<SNode> res = new ArrayList(l); res.add(r); RESULT = res; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("ref_list",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -278,7 +278,7 @@ class CUP$Parser$actions {
 		int rleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int rright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		SNode r = (SNode)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 RESULT = new ArrayList(); 
+		 ArrayList<SNode> res = new ArrayList(); res.add(r); RESULT = res; 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("ref_list",6, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
@@ -290,7 +290,7 @@ class CUP$Parser$actions {
 		int nleft = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).left;
 		int nright = ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()).right;
 		String n = (String)((java_cup.runtime.Symbol) CUP$Parser$stack.peek()).value;
-		 RESULT = null; 
+		 RESULT = StructureCreation.createPlaceRef(n); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("place_ref",5, ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
           return CUP$Parser$result;
