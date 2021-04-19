@@ -1,6 +1,6 @@
 petrinet DiningPhilosophers_5 {
   place aristotleThinking (1)
-  place aristotleHungry (0) 
+  place aristotleHungry (0)
   place aristotleEating (0) 
   place socratesThinking (1) 
   place socratesHungry (0) 
@@ -22,8 +22,8 @@ petrinet DiningPhilosophers_5 {
   transition aristotleBecomeHungry: aristotleThinking => aristotleHungry
   transition aristotleAcquireForks: aristotleHungry, forkMA, forkAS => aristotleEating
   transition aristotleReleaseForks: aristotleEating => aristotleThinking, forkMA, forkAS
-  transition socratesBecomeHungry: socratesThinking => socratesHungry 
-  transition socratesAcquireForks: socratesHungry, forkAS, forkSP => socratesEating 
+  transition socratesBecomeHungry: socratesThinking => socratesHungry
+  transition socratesAcquireForks: socratesHungry, forkAS, forkSP => socratesEating
   transition socratesReleaseForks: socratesEating => socratesThinking, forkAS, forkSP 
   transition platoBecomeHungry: platoThinking => platoHungry
   transition platoAcquireForks: platoHungry, forkSP, forkPK => platoEating

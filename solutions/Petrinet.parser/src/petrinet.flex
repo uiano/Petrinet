@@ -68,4 +68,4 @@ DecIntegerLiteral = 0 | [1-9][0-9]*
 {WhiteSpace}                   { /* ignore */ }
 
 /* error fallback */
-[^]                              { throw new UnknownCharacterException(yytext()); }
+[^]                              { throw new RuntimeException("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<"); }

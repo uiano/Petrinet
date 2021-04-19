@@ -1,7 +1,6 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
---> use MPS creation routines directly in cup parser
---> have errors identified and marked in output (lex, syntax, references)
+--> replace exceptions in parser with error outputs.
 - Introduce unit tests
 --> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone - see email Vaclav from 6.4. 9:33

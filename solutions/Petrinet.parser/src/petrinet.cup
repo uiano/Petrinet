@@ -41,6 +41,8 @@ start with petrinet;
 // Rules
 petrinet ::= PETRINET IDENTIFIER:n OPEN_BRACE item_list:l CLOSE_BRACE 
       {: RESULT = StructureCreation.createPetrinet(n,l); :}
+    | error:e
+      {: StructureCreation.error("Syntax error in input file."); :}
     ;
 
 item_list ::= item_list:l item:i
@@ -53,14 +55,20 @@ item ::= place:p
       {: RESULT = p; :}
     | transition:t 
       {: RESULT = t; :}
+    | IDENTIFIER:i error
+      {: StructureCreation.error("Missing keyword in line "+(ileft+1)+"."); :}
     ;
 
 place ::= PLACE IDENTIFIER:n OPEN_PAR NUMBER:i CLOSE_PAR
       {: RESULT = StructureCreation.createPlace(n,i); :}
+    | PLACE:p error
+      {: StructureCreation.error("Syntax error in place declaration beginning in line "+(pleft+1)+"."); :}
     ;
 
 transition ::= TRANSITION IDENTIFIER:n COLON ref_list:in ARROW ref_list:out
       {: RESULT = StructureCreation.createTransition(n,in,out); :}
+    | TRANSITION:t error
+      {: StructureCreation.error("Syntax error in transition declaration beginning in line "+(tleft+1)+"."); :}
     ;
 
 ref_list ::= ref_list:l COMMA place_ref:r

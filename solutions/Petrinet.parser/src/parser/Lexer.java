@@ -958,7 +958,7 @@ public class Lexer implements java_cup.runtime.Scanner {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
-            { throw new UnknownCharacterException(yytext());
+            { throw new RuntimeException("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<");
             }
             // fall through
           case 15: break;

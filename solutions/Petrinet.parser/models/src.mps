@@ -11,6 +11,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="by8" ref="r:aabef835-3b12-4a62-8117-58d815755c0f(Petrinet.plugin.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -27,6 +28,9 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
+        <child id="1164991057263" name="throwable" index="YScLw" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -59,10 +63,12 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -460,6 +466,27 @@
       </node>
       <node concept="3Tqbb2" id="47Ahrf8tufJ" role="3clF45">
         <ref role="ehGHo" to="m6ps:2_lTqLe0JLV" resolve="PlaceRef" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="39fw0rFWaYQ" role="jymVt">
+      <property role="TrG5h" value="error" />
+      <node concept="3clFbS" id="39fw0rFWaYT" role="3clF47">
+        <node concept="YS8fn" id="39fw0rG1NHD" role="3cqZAp">
+          <node concept="2ShNRf" id="39fw0rG1NJ_" role="YScLw">
+            <node concept="1pGfFk" id="39fw0rG1NUV" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="37vLTw" id="39fw0rG1O9$" role="37wK5m">
+                <ref role="3cqZAo" node="39fw0rFWb8i" resolve="msg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="39fw0rFWaMn" role="1B3o_S" />
+      <node concept="3cqZAl" id="39fw0rFWaVB" role="3clF45" />
+      <node concept="37vLTG" id="39fw0rFWb8i" role="3clF46">
+        <property role="TrG5h" value="msg" />
+        <node concept="17QB3L" id="39fw0rFWb8h" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="47Ahrf8sue0" role="1B3o_S" />
