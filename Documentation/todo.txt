@@ -5,11 +5,6 @@ TODO list for development of Petrinet in MPS
 --> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
 - check that build and create works directly after download from git - adapt readme
-- editor: make sure it works with only typing
-- editor: recheck context menu
-- better handling of empty transition in/out lists
-- add constraint that Petrinet names have to be distinct
-- add constraint that used places must come before transitions, maybe introduce order: first places, then transitions
 LATER
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.
@@ -20,3 +15,4 @@ LATER
   - watches: hide system-level variables?
 --> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targetting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
 - add possibility to comment lines
+- handle that the same place could appear twice in transition in or out
