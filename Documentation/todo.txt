@@ -1,6 +1,7 @@
 TODO list for development of Petrinet in MPS
 - create text input (copy in)
 --> replace exceptions in parser with error outputs.
+--> build cup and flex only when in same project
 - Introduce unit tests
 --> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
@@ -15,4 +16,4 @@ LATER
   - watches: hide system-level variables?
 --> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targetting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
 - add possibility to comment lines
-- handle that the same place could appear twice in transition in or out
+- handle that the same place could appear twice in transition in or out (in execution)
