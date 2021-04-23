@@ -136,7 +136,6 @@
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -347,7 +346,7 @@
         </node>
       </node>
       <node concept="3cqZAl" id="ElRxxdrwND" role="3clF45" />
-      <node concept="3Tmbuc" id="crAj3NL59t" role="1B3o_S" />
+      <node concept="3Tm1VV" id="39fw0rGn5tW" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="ElRxxdqDjE" role="1B3o_S" />
   </node>
