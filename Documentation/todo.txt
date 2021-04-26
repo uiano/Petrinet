@@ -6,6 +6,7 @@ TODO list for development of Petrinet in MPS
 --> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
 - check that build and create works directly after download from git - adapt readme
+- handle warnings and notifications
 LATER
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.
