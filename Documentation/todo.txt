@@ -3,7 +3,10 @@ TODO list for development of Petrinet in MPS
 --> replace exceptions in parser with error outputs.
 --> build cup and flex only when in same project
 - Introduce unit tests
---> Sure, the voicemenu sample (git@github.com:vaclav/voicemenu.git) contains a simple test language example.
+--> test editor typing
+--> test references
+--> test generator
+--> test constraint: double petrinet name
 --> find better way for project path than absolute path in file->settings->path variables
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
 - check that build and create works directly after download from git - adapt readme

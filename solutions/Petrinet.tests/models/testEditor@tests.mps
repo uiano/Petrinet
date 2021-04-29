@@ -126,6 +126,7 @@
       <concept id="9072452311598371297" name="Petrinet.structure.PetriNet" flags="ng" index="17AsaI">
         <child id="9072452311598371298" name="elements" index="17AsaH" />
       </concept>
+      <concept id="2978539256781404724" name="Petrinet.structure.Transition" flags="ng" index="1BlLYo" />
     </language>
   </registry>
   <node concept="3s_ewN" id="39fw0rGiJri">
@@ -211,7 +212,7 @@
     </node>
   </node>
   <node concept="1lH9Xt" id="2TMDTFvzYua">
-    <property role="TrG5h" value="doubleName" />
+    <property role="TrG5h" value="doublePlaceName" />
     <node concept="1qefOq" id="2TMDTFvzYzl" role="1SKRRt">
       <node concept="17AsaI" id="2TMDTFvzYzk" role="1qenE9">
         <property role="TrG5h" value="pp" />
@@ -242,6 +243,47 @@
   </node>
   <node concept="2XOHcx" id="2TMDTFv$7Rw">
     <property role="2XOHcw" value="${petrinet_project_home}" />
+  </node>
+  <node concept="1lH9Xt" id="1yOr9ESleoQ">
+    <property role="TrG5h" value="doubleTransitionName" />
+    <node concept="1qefOq" id="1yOr9ESleoR" role="1SKRRt">
+      <node concept="17AsaI" id="1yOr9ESleoS" role="1qenE9">
+        <property role="TrG5h" value="pp" />
+        <node concept="1BlLYo" id="1yOr9ESlfS3" role="17AsaH">
+          <property role="TrG5h" value="trans1" />
+          <node concept="7CXmI" id="1yOr9ESlfSp" role="lGtFl">
+            <node concept="1TM$A" id="1yOr9ESlfSq" role="7EUXB">
+              <node concept="2PYRI3" id="1yOr9ESlfSu" role="3lydEf">
+                <ref role="39XzEq" to="s7nw:6dV6VsscCjR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BlLYo" id="1yOr9ESlfSe" role="17AsaH">
+          <property role="TrG5h" value="trans1" />
+          <node concept="7CXmI" id="1yOr9ESlfSw" role="lGtFl">
+            <node concept="1TM$A" id="1yOr9ESlfSx" role="7EUXB">
+              <node concept="2PYRI3" id="1yOr9ESlfS_" role="3lydEf">
+                <ref role="39XzEq" to="s7nw:6dV6VsscCjR" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1yOr9ESlfSV">
+    <property role="TrG5h" value="doublePetrinetName" />
+    <node concept="1qefOq" id="1yOr9ESlfSW" role="1SKRRt">
+      <node concept="17AsaI" id="1yOr9ESlfSX" role="1qenE9">
+        <property role="TrG5h" value="PN_1" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="1yOr9ESlfWi" role="1SKRRt">
+      <node concept="17AsaI" id="1yOr9ESlfWo" role="1qenE9">
+        <property role="TrG5h" value="PN_1" />
+      </node>
+    </node>
   </node>
 </model>
 
