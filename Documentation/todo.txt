@@ -1,24 +1,24 @@
-TODO list for development of Petrinet in MPS
+TODO list for development of Petri net in MPS
 - create text input (copy in)
 --> replace exceptions in parser with error outputs.
 --> build cup and flex only when in same project
 - Introduce unit tests
---> test editor typing
---> test references
 --> test generator
---> test constraint: double petrinet name
---> find better way for project path than absolute path in file->settings->path variables
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
 - check that build and create works directly after download from git - adapt readme
 - handle warnings and notifications
 LATER
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.
-- build debugger for Petrinet runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
-  - Debugger = abstract exec engine (set breakpoint, step, run), in transf: also translate debug info (if exec)
+- build debugger for Petri net runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
+  - Debugger = abstract exec engine (set breakpoint, step, run), in transformation: also translate debug info (if exec)
   - debugger.steps: single, into, out, watch (value)
   - stack frames? define by structure of statements
   - watches: hide system-level variables?
---> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targetting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
+--> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targeting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
 - add possibility to comment lines
 - handle that the same place could appear twice in transition in or out (in execution)
+- test constraint: double petri net name
+- test references outside the petri net
+- find better way for project path than absolute path in file->settings->path variables
+- test editor typing including new lines (enter)
