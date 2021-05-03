@@ -64,7 +64,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="2TMDTFv$7Rw">
-    <property role="2XOHcw" value="${petrinet_project_home}" />
+    <property role="2XOHcw" value="${MPS_Project_Home}/Petrinet" />
   </node>
   <node concept="LiM7Y" id="2GieVSMfIOp">
     <property role="TrG5h" value="typePlace" />

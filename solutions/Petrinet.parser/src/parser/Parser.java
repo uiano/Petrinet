@@ -9,6 +9,9 @@ import src.StructureCreation;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.ArrayList;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Level;
 import java_cup.runtime.*;
 import java_cup.runtime.XMLElement;
 
