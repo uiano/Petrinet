@@ -1,4 +1,4 @@
-petrinet DiningPhilosophers_5 {
+petrinet DiningPhilosophers_5 { %
   place place aristotleThinking (1)
   place aristotleHungry (0)
   place aristotleEating (0) 

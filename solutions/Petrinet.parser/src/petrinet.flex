@@ -1,5 +1,6 @@
 package parser;
 
+import src.StructureCreation;
 import java_cup.runtime.Symbol;
 
 /** Lexer of a Petri net language. */
@@ -68,4 +69,4 @@ DecIntegerLiteral = 0 | [1-9][0-9]*
 {WhiteSpace}                   { /* ignore */ }
 
 /* error fallback */
-[^]                              { throw new RuntimeException("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<"); }
+[^]                            { StructureCreation.error("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<"); }

@@ -4,6 +4,7 @@
 
 package parser;
 
+import src.StructureCreation;
 import java_cup.runtime.Symbol;
 
 /** Lexer of a Petri net language. */
@@ -958,7 +959,7 @@ public class Lexer implements java_cup.runtime.Scanner {
       else {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
-            { throw new RuntimeException("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<");
+            { StructureCreation.error("Invalid character on line "+(yyline+1)+": >>"+yytext()+"<<");
             }
             // fall through
           case 15: break;

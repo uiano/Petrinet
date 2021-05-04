@@ -1,7 +1,6 @@
 TODO list for development of Petri net in MPS
 - create text input (copy in)
 --> replace exceptions in parser with error outputs.
---> build cup and flex only when in same project
 - Introduce unit tests
 --> test generator
 --> test parser
@@ -23,3 +22,4 @@ LATER
 - test references outside the petri net
 - find better way for project path than absolute path in file->settings->path variables
 - test editor typing including new lines (enter)
+- import Petrinet only if model has Used Languages includes "Petrinet"

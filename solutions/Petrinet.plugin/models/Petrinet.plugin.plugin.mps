@@ -51,6 +51,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -67,6 +68,7 @@
         <reference id="1204992316090" name="point" index="2f8Tey" />
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
+      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
@@ -1220,7 +1222,6 @@
   <node concept="sE7Ow" id="1Lslmnm$6PH">
     <property role="TrG5h" value="BuildParserFiles" />
     <property role="2uzpH1" value="Build CUP and Flex Java Files" />
-    <property role="fJN8o" value="true" />
     <node concept="1DS2jV" id="1Lslmnm$6US" role="1NuT2Z">
       <property role="TrG5h" value="ideProject" />
       <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
@@ -1754,6 +1755,31 @@
                     <property role="Xl_RC" value="Generation successful." />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="2GieVSMm6rh" role="tmbBb">
+      <node concept="3clFbS" id="2GieVSMm6ri" role="2VODD2">
+        <node concept="3clFbF" id="2GieVSMm6Zs" role="3cqZAp">
+          <node concept="2OqwBi" id="2GieVSMmQSW" role="3clFbG">
+            <node concept="2OqwBi" id="2GieVSMm7Te" role="2Oq$k0">
+              <node concept="2OqwBi" id="2GieVSMm6Zm" role="2Oq$k0">
+                <node concept="2WthIp" id="2GieVSMm6Zp" role="2Oq$k0" />
+                <node concept="1DTwFV" id="2GieVSMm6Zr" role="2OqNvi">
+                  <ref role="2WH_rO" node="1Lslmnm$6US" resolve="ideProject" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2GieVSMm8Lt" role="2OqNvi">
+                <ref role="37wK5l" to="4nm9:~Project.getName()" resolve="getName" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2GieVSMmRH1" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="Xl_RD" id="2GieVSMm9qI" role="37wK5m">
+                <property role="Xl_RC" value="Petrinet" />
               </node>
             </node>
           </node>
