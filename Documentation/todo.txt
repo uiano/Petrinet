@@ -18,8 +18,7 @@ LATER
 --> It depends on whether you are generating BaseLanguage or not. With the Java debugger being embedded in MPS a BaseLanguage-targeting language is easy to support debugging for. Otherwise you need to implement integration with the debugger of the platform that you are generating into. More on the topic can be found at https://www.jetbrains.com/help/mps/2020.3/debugger.html
 - add possibility to comment lines
 - handle that the same place could appear twice in transition in or out (in execution)
-- test constraint: double petri net name
-- test references outside the petri net
+- test references outside the petri net (when there are two Petrinets, they should not be able to see each other)
 - find better way for project path than absolute path in file->settings->path variables
 - test editor typing including new lines (enter)
 - import Petrinet only if model has Used Languages includes "Petrinet"
