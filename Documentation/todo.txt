@@ -21,4 +21,3 @@ LATER
 - test references outside the petri net (when there are two Petrinets, they should not be able to see each other)
 - find better way for project path than absolute path in file->settings->path variables
 - test editor typing including new lines (enter)
-- import Petrinet only if model has Used Languages includes "Petrinet"

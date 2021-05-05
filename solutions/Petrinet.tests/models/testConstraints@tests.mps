@@ -67,11 +67,25 @@
     <node concept="1qefOq" id="1yOr9ESlfSW" role="1SKRRt">
       <node concept="17AsaI" id="1yOr9ESlfSX" role="1qenE9">
         <property role="TrG5h" value="PN_1" />
+        <node concept="7CXmI" id="2GieVSMoWrm" role="lGtFl">
+          <node concept="1TM$A" id="2GieVSMoWrn" role="7EUXB">
+            <node concept="2PYRI3" id="2GieVSMoWrr" role="3lydEf">
+              <ref role="39XzEq" to="s7nw:39fw0rG9LOx" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="1yOr9ESlfWi" role="1SKRRt">
       <node concept="17AsaI" id="1yOr9ESlfWo" role="1qenE9">
         <property role="TrG5h" value="PN_1" />
+        <node concept="7CXmI" id="2GieVSMoWrt" role="lGtFl">
+          <node concept="1TM$A" id="2GieVSMoWru" role="7EUXB">
+            <node concept="2PYRI3" id="2GieVSMoWry" role="3lydEf">
+              <ref role="39XzEq" to="s7nw:39fw0rG9LOx" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -79,7 +93,7 @@
     <property role="TrG5h" value="doublePlaceName" />
     <node concept="1qefOq" id="2TMDTFvzYzl" role="1SKRRt">
       <node concept="17AsaI" id="2TMDTFvzYzk" role="1qenE9">
-        <property role="TrG5h" value="pp" />
+        <property role="TrG5h" value="placeNet" />
         <node concept="2pD$ho" id="2TMDTFvzYzq" role="17AsaH">
           <property role="TrG5h" value="abc" />
           <property role="2pD$hs" value="0" />
@@ -109,7 +123,7 @@
     <property role="TrG5h" value="doubleTransitionName" />
     <node concept="1qefOq" id="1yOr9ESleoR" role="1SKRRt">
       <node concept="17AsaI" id="1yOr9ESleoS" role="1qenE9">
-        <property role="TrG5h" value="pp" />
+        <property role="TrG5h" value="transNet" />
         <node concept="1BlLYo" id="1yOr9ESlfS3" role="17AsaH">
           <property role="TrG5h" value="trans1" />
           <node concept="7CXmI" id="1yOr9ESlfSp" role="lGtFl">
