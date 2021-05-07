@@ -41,6 +41,7 @@
     <import index="wsw7" ref="r:ba41e9c6-15ca-4a47-95f2-6a81c2318547(jetbrains.mps.checkers)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="xvee" ref="r:4d6aa5d6-3268-448b-90b3-67c9f9e03da2(src)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -726,6 +727,15 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="V3P7JbGZpo" role="3cqZAp">
+          <node concept="2YIFZM" id="V3P7JbINCy" role="3clFbG">
+            <ref role="37wK5l" to="xvee:V3P7JbIN1n" resolve="setHandler" />
+            <ref role="1Pybhc" to="xvee:47Ahrf8sudZ" resolve="StructureCreation" />
+            <node concept="37vLTw" id="V3P7JbINHT" role="37wK5m">
+              <ref role="3cqZAo" node="1LslmnmnR5N" resolve="msg" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3Fdme44ltyi" role="3cqZAp">
           <node concept="3cpWsn" id="3Fdme44ltyj" role="3cpWs9">
             <property role="TrG5h" value="chooser" />
@@ -1163,34 +1173,83 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="1Lslmnmozcs" role="3cqZAp">
-                  <node concept="2OqwBi" id="1Lslmnmozct" role="3clFbG">
-                    <node concept="37vLTw" id="1Lslmnmozcu" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1LslmnmnR5N" resolve="msg" />
-                    </node>
-                    <node concept="liA8E" id="1Lslmnmozcv" role="2OqNvi">
-                      <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
-                      <node concept="2ShNRf" id="1Lslmnmozcw" role="37wK5m">
-                        <node concept="1pGfFk" id="1Lslmnmozcx" role="2ShVmc">
-                          <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
-                          <node concept="Rm8GO" id="1Lslmnmozcy" role="37wK5m">
-                            <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                            <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
-                          </node>
-                          <node concept="3cpWs3" id="1Lslmnmo_hi" role="37wK5m">
-                            <node concept="Xl_RD" id="1Lslmnmo_hj" role="3uHU7w">
-                              <property role="Xl_RC" value=" successfully created." />
-                            </node>
-                            <node concept="3cpWs3" id="1Lslmnmo_hk" role="3uHU7B">
-                              <node concept="Xl_RD" id="1Lslmnmo_hl" role="3uHU7B">
-                                <property role="Xl_RC" value="Petrinet " />
+                <node concept="3clFbJ" id="V3P7JbJCrs" role="3cqZAp">
+                  <node concept="3clFbS" id="V3P7JbJCru" role="3clFbx">
+                    <node concept="3clFbF" id="V3P7JbJDDU" role="3cqZAp">
+                      <node concept="2OqwBi" id="V3P7JbJDDV" role="3clFbG">
+                        <node concept="37vLTw" id="V3P7JbJDDW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1LslmnmnR5N" resolve="msg" />
+                        </node>
+                        <node concept="liA8E" id="V3P7JbJDDX" role="2OqNvi">
+                          <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
+                          <node concept="2ShNRf" id="V3P7JbJDDY" role="37wK5m">
+                            <node concept="1pGfFk" id="V3P7JbJDDZ" role="2ShVmc">
+                              <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                              <node concept="Rm8GO" id="V3P7JbJDRu" role="37wK5m">
+                                <ref role="Rm8GQ" to="et5u:~MessageKind.ERROR" resolve="ERROR" />
+                                <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                               </node>
-                              <node concept="2OqwBi" id="1Lslmnmo_hm" role="3uHU7w">
-                                <node concept="37vLTw" id="1Lslmnmo_hn" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="47Ahrf8ASPL" resolve="pn" />
+                              <node concept="3cpWs3" id="V3P7JbJDE1" role="37wK5m">
+                                <node concept="Xl_RD" id="V3P7JbJDE2" role="3uHU7w">
+                                  <property role="Xl_RC" value=" created with errors." />
                                 </node>
-                                <node concept="3TrcHB" id="1Lslmnmo_ho" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                <node concept="3cpWs3" id="V3P7JbJDE3" role="3uHU7B">
+                                  <node concept="Xl_RD" id="V3P7JbJDE4" role="3uHU7B">
+                                    <property role="Xl_RC" value="Petrinet " />
+                                  </node>
+                                  <node concept="2OqwBi" id="V3P7JbJDE5" role="3uHU7w">
+                                    <node concept="37vLTw" id="V3P7JbJDE6" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="47Ahrf8ASPL" resolve="pn" />
+                                    </node>
+                                    <node concept="3TrcHB" id="V3P7JbJDE7" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="V3P7JbJCWf" role="3clFbw">
+                    <ref role="37wK5l" to="xvee:V3P7JbJ_ov" resolve="getErrors" />
+                    <ref role="1Pybhc" to="xvee:47Ahrf8sudZ" resolve="StructureCreation" />
+                  </node>
+                  <node concept="9aQIb" id="V3P7JbJD1m" role="9aQIa">
+                    <node concept="3clFbS" id="V3P7JbJD1n" role="9aQI4">
+                      <node concept="3clFbF" id="1Lslmnmozcs" role="3cqZAp">
+                        <node concept="2OqwBi" id="1Lslmnmozct" role="3clFbG">
+                          <node concept="37vLTw" id="1Lslmnmozcu" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1LslmnmnR5N" resolve="msg" />
+                          </node>
+                          <node concept="liA8E" id="1Lslmnmozcv" role="2OqNvi">
+                            <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
+                            <node concept="2ShNRf" id="1Lslmnmozcw" role="37wK5m">
+                              <node concept="1pGfFk" id="1Lslmnmozcx" role="2ShVmc">
+                                <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
+                                <node concept="Rm8GO" id="1Lslmnmozcy" role="37wK5m">
+                                  <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
+                                  <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
+                                </node>
+                                <node concept="3cpWs3" id="1Lslmnmo_hi" role="37wK5m">
+                                  <node concept="Xl_RD" id="1Lslmnmo_hj" role="3uHU7w">
+                                    <property role="Xl_RC" value=" successfully created." />
+                                  </node>
+                                  <node concept="3cpWs3" id="1Lslmnmo_hk" role="3uHU7B">
+                                    <node concept="Xl_RD" id="1Lslmnmo_hl" role="3uHU7B">
+                                      <property role="Xl_RC" value="Petrinet " />
+                                    </node>
+                                    <node concept="2OqwBi" id="1Lslmnmo_hm" role="3uHU7w">
+                                      <node concept="37vLTw" id="1Lslmnmo_hn" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="47Ahrf8ASPL" resolve="pn" />
+                                      </node>
+                                      <node concept="3TrcHB" id="1Lslmnmo_ho" role="2OqNvi">
+                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>

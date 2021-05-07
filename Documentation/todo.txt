@@ -1,8 +1,5 @@
 TODO list for development of Petri net in MPS
-- create text input (copy in)
---> replace exceptions in parser with error outputs.
 - Introduce unit tests
---> test generator
 --> test parser
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
 - check that build and create works directly after download from git - adapt readme
