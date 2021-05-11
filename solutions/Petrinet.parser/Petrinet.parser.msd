@@ -54,6 +54,7 @@
     <module reference="8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)" version="0" />
     <module reference="a695f313-fb68-4d1b-99f9-b01f3baf1635(Petrinet.parser)" version="0" />
     <module reference="4b4417a8-ed63-41a0-9044-0b4e14591dae(Petrinet.plugin)" version="0" />
+    <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>

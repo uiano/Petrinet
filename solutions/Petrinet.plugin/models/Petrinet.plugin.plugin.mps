@@ -319,6 +319,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
         <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
@@ -999,6 +1003,10 @@
                   </node>
                 </node>
                 <node concept="3cpWs8" id="6c1M1NXwxsk" role="3cqZAp">
+                  <node concept="15s5l7" id="V3P7Jc15At" role="lGtFl">
+                    <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Parser(Scanner) is deprecated&quot;;FLAVOUR_RULE_ID=&quot;[r:cec599e3-51d2-48a7-af31-989e3cbd593c(jetbrains.mps.lang.core.typesystem)/1225207423729]&quot;;" />
+                    <property role="huDt6" value="Warning: Parser(Scanner) is deprecated" />
+                  </node>
                   <node concept="3cpWsn" id="6c1M1NXwxsl" role="3cpWs9">
                     <property role="TrG5h" value="p" />
                     <node concept="3uibUv" id="6c1M1NXxei1" role="1tU5fm">

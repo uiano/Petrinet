@@ -37,7 +37,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -550,8 +549,18 @@
       <node concept="3clFbS" id="crAj3NIqc4" role="3clF47">
         <node concept="3cpWs8" id="7ti_Y3RsX$v" role="3cqZAp">
           <node concept="3cpWsn" id="7ti_Y3RsX$y" role="3cpWs9">
-            <property role="TrG5h" value="hallo" />
-            <node concept="10Oyi0" id="7ti_Y3RsX$t" role="1tU5fm" />
+            <property role="TrG5h" value="trans" />
+            <node concept="3uibUv" id="V3P7Jc1UFk" role="1tU5fm">
+              <ref role="3uigEE" to="qvf9:3NCcRJL4QrV" resolve="PN_Transition" />
+            </node>
+            <node concept="2ShNRf" id="V3P7Jc1UVb" role="33vP2m">
+              <node concept="1pGfFk" id="V3P7Jc1WcH" role="2ShVmc">
+                <ref role="37wK5l" to="qvf9:3NCcRJL4Qt0" resolve="PN_Transition" />
+                <node concept="Xl_RD" id="V3P7Jc1Wg9" role="37wK5m">
+                  <property role="Xl_RC" value="dummy" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="2b32R4" id="7ti_Y3RvlGZ" role="lGtFl">
             <node concept="3JmXsc" id="7ti_Y3RvlH1" role="2P8S$">
@@ -590,26 +599,33 @@
           </node>
         </node>
         <node concept="3clFbH" id="crAj3NIqc$" role="3cqZAp" />
-        <node concept="3cpWs8" id="7ti_Y3Ru94m" role="3cqZAp">
-          <node concept="3cpWsn" id="7ti_Y3Ru94n" role="3cpWs9">
-            <property role="TrG5h" value="hallo" />
-            <node concept="10Oyi0" id="7ti_Y3Ru94o" role="1tU5fm" />
+        <node concept="3clFbF" id="V3P7Jc1WyW" role="3cqZAp">
+          <node concept="2OqwBi" id="V3P7Jc1X8Y" role="3clFbG">
+            <node concept="37vLTw" id="V3P7Jc1WyU" role="2Oq$k0">
+              <ref role="3cqZAo" node="ElRxxdrA_x" resolve="transitions" />
+            </node>
+            <node concept="liA8E" id="V3P7Jc1XWD" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="37vLTw" id="V3P7Jc1Y3i" role="37wK5m">
+                <ref role="3cqZAo" node="7ti_Y3RsX$y" resolve="trans" />
+              </node>
+            </node>
           </node>
-          <node concept="1WS0z7" id="7ti_Y3Ru94p" role="lGtFl">
-            <node concept="3JmXsc" id="7ti_Y3Ru94q" role="3Jn$fo">
-              <node concept="3clFbS" id="7ti_Y3Ru94r" role="2VODD2">
-                <node concept="3clFbF" id="7ti_Y3Ru94s" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ti_Y3Ru94t" role="3clFbG">
-                    <node concept="3Tsc0h" id="7ti_Y3Ru94u" role="2OqNvi">
+          <node concept="1WS0z7" id="V3P7Jc1YiT" role="lGtFl">
+            <node concept="3JmXsc" id="V3P7Jc1YiW" role="3Jn$fo">
+              <node concept="3clFbS" id="V3P7Jc1YiX" role="2VODD2">
+                <node concept="3clFbF" id="V3P7Jc1Yj3" role="3cqZAp">
+                  <node concept="2OqwBi" id="V3P7Jc1YiY" role="3clFbG">
+                    <node concept="3Tsc0h" id="V3P7Jc1Yj1" role="2OqNvi">
                       <ref role="3TtcxE" to="m6ps:7RBOOWUvx7y" resolve="elements" />
                     </node>
-                    <node concept="30H73N" id="7ti_Y3Ru94v" role="2Oq$k0" />
+                    <node concept="30H73N" id="V3P7Jc1Yj2" role="2Oq$k0" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1sPUBX" id="7ti_Y3Ru94w" role="lGtFl">
+          <node concept="1sPUBX" id="V3P7Jc1YCu" role="lGtFl">
             <ref role="v9R2y" node="7ti_Y3RtYYF" resolve="initialization" />
           </node>
         </node>

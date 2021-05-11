@@ -4,10 +4,12 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ximz" ref="r:d3378a35-13da-49cb-8ad1-afbd30e88ad8(jetbrains.mps.ant.execution)" />
+    <import index="go48" ref="r:fc6b4266-fe93-4e02-bc36-aebff4c903c3(jetbrains.mps.baseLanguage.execution.api)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -114,6 +116,9 @@
       </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
+      </concept>
+      <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
+        <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
       <concept id="3189788309731981027" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleSolutionRuntime" flags="ng" index="1E0d5M">
         <reference id="3189788309731981028" name="solution" index="1E0d5P" />
@@ -231,11 +236,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="V3P7JbYhc9" role="3bR37C">
-          <node concept="3bR9La" id="V3P7JbYhca" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:sx8XDLCp97" resolve="jetbrains.mps.execution.util" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="V3P7JbYhcb" role="3bR37C">
           <node concept="3bR9La" id="V3P7JbYhcc" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
@@ -313,11 +313,16 @@
         <node concept="1E0d5M" id="V3P7JbYhlW" role="1E1XAP">
           <ref role="1E0d5P" node="V3P7JbYhbO" resolve="Petrinet.runtime" />
         </node>
+        <node concept="1SiIV0" id="V3P7Jc0iy2" role="3bR37C">
+          <node concept="1Busua" id="V3P7Jc0iy3" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:sx8XDLCp97" resolve="jetbrains.mps.execution.util" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbl" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="Petrinet.plugin" />
         <property role="3LESm3" value="4b4417a8-ed63-41a0-9044-0b4e14591dae" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="V3P7JbYhbg" role="3LF7KH">
           <node concept="2Ry0Ak" id="V3P7JbYhbh" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -595,6 +600,9 @@
         </node>
         <node concept="3LEDTM" id="V3P7JbYhm$" role="3LEDUa">
           <ref role="3LEDTN" node="V3P7JbYhbx" resolve="Petrinet.tools" />
+        </node>
+        <node concept="3LEDTy" id="V3P7Jc0iyu" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
         </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbO" role="2G$12L">
