@@ -1,9 +1,6 @@
 TODO list for development of Petri net in MPS
-- Introduce unit tests
---> test parser
 - create plugin / standalone - see email Vaclav from 6.4. 9:33
-- check that build and create works directly after download from git - adapt readme
-- handle warnings and notifications
+- have a better check for BuildParserFiles than the check of the project name
 LATER
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.
@@ -18,3 +15,5 @@ LATER
 - test references outside the petri net (when there are two Petrinets, they should not be able to see each other)
 - find better way for project path than absolute path in file->settings->path variables
 - test editor typing including new lines (enter)
+- remove all warnings and notifications
+- create unit tests for the parser
