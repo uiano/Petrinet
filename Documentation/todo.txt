@@ -17,3 +17,4 @@ LATER
 - test editor typing including new lines (enter)
 - remove all warnings and notifications
 - create unit tests for the parser
+- create unit tests for text generation

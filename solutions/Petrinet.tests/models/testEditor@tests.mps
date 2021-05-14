@@ -11,6 +11,9 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
+        <child id="1228934507814" name="keyStrokes" index="yd6KS" />
+      </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
         <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
@@ -31,6 +34,12 @@
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
+    </language>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -87,11 +96,24 @@
           <property role="TrG5h" value="p" />
           <property role="2pD$hs" value="1" />
         </node>
+        <node concept="2pD$ho" id="2TYxK3XzMtV" role="17AsaH">
+          <property role="TrG5h" value="q" />
+          <property role="2pD$hs" value="2" />
+        </node>
       </node>
     </node>
     <node concept="3clFbS" id="2GieVSMfIP8" role="LjaKd">
       <node concept="2TK7Tu" id="2GieVSMgoFP" role="3cqZAp">
         <property role="2TTd_B" value="place p (1)" />
+      </node>
+      <node concept="yd1bK" id="2TYxK3XyPr3" role="3cqZAp">
+        <node concept="pLAjd" id="2TYxK3XyPr5" role="yd6KS">
+          <property role="pLAjf" value="VK_INSERT" />
+          <property role="pLAjc" value="any" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2TYxK3XyPxV" role="3cqZAp">
+        <property role="2TTd_B" value="place q(2)" />
       </node>
     </node>
   </node>

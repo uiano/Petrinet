@@ -207,6 +207,9 @@
       <node concept="m$_yC" id="V3P7JbYhs_" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWV4Nl" resolve="jetbrains.mps.execution.languages" />
       </node>
+      <node concept="m$_yC" id="2TYxK3XxOjY" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
+      </node>
       <node concept="3_J27D" id="V3P7JbYhbX" role="m_cZH">
         <node concept="3Mxwew" id="V3P7JbYhbY" role="3MwsjC">
           <property role="3MwjfP" value="Petrinet" />
