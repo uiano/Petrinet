@@ -23,7 +23,7 @@
     <source path="${module}/src" />
   </sourcePath>
   <dependencies>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)</dependency>
     <dependency reexport="false">4b4417a8-ed63-41a0-9044-0b4e14591dae(Petrinet.plugin)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>

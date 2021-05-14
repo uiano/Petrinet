@@ -13,7 +13,6 @@ import java_cup.runtime.Symbol;
 %cup
 %line
 %column
-%throws UnknownCharacterException
 
 %{
   StringBuffer string = new StringBuffer();

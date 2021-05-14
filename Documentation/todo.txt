@@ -14,7 +14,6 @@ LATER
 - handle that the same place could appear twice in transition in or out (in execution)
 - test references outside the petri net (when there are two Petrinets, they should not be able to see each other)
 - find better way for project path than absolute path in file->settings->path variables
-- test editor typing including new lines (enter)
 - remove all warnings and notifications
 - create unit tests for the parser
 - create unit tests for text generation
