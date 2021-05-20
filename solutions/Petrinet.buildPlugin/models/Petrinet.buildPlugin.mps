@@ -23,6 +23,9 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -42,6 +45,7 @@
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
+      <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
@@ -76,17 +80,23 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -178,6 +188,29 @@
         <node concept="m$_wl" id="V3P7JbYhc7" role="39821P">
           <ref role="m_rDy" node="V3P7JbYhbQ" resolve="Petrinet" />
           <node concept="pUk6x" id="V3P7JbYhc8" role="pUk7w" />
+          <node concept="398223" id="40lc6DqAdc4" role="39821P">
+            <node concept="3_J27D" id="40lc6DqAdc5" role="Nbhlr">
+              <node concept="3Mxwew" id="40lc6DqAdcd" role="3MwsjC">
+                <property role="3MwjfP" value="lib" />
+              </node>
+            </node>
+            <node concept="28jJK3" id="40lc6DqAddX" role="39821P">
+              <node concept="55IIr" id="40lc6DqAddY" role="28jJRO">
+                <node concept="2Ry0Ak" id="40lc6DqAdfR" role="iGT6I">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="40lc6DqAdfW" role="2Ry0An">
+                    <property role="2Ry0Am" value="Petrinet.parser" />
+                    <node concept="2Ry0Ak" id="40lc6DqAdg1" role="2Ry0An">
+                      <property role="2Ry0Am" value="external" />
+                      <node concept="2Ry0Ak" id="40lc6DqAdg6" role="2Ry0An">
+                        <property role="2Ry0Am" value="java-cup-11b-runtime.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -224,6 +257,15 @@
         <node concept="3o6iSG" id="V3P7JbYhc0" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
+      </node>
+      <node concept="3_J27D" id="3PBXdrnkQHt" role="3s6cr7">
+        <node concept="3Mxwew" id="3PBXdrnkQHv" role="3MwsjC">
+          <property role="3MwjfP" value="simple executable Petrinet language" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="3PBXdrnkQHA" role="2iVFfd">
+        <property role="2iUeEt" value="University of Agder" />
+        <property role="2iUeEu" value="uia.no/en" />
       </node>
     </node>
     <node concept="2G$12M" id="V3P7JbYhbP" role="3989C9">

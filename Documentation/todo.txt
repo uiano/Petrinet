@@ -1,7 +1,4 @@
 TODO list for development of Petri net in MPS
-- create plugin / standalone - see email Vaclav from 6.4. 9:33
-- have a better check for BuildParserFiles than the check of the project name
-LATER
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.
 - build debugger for Petri net runtime (debug language) - compare with Eclipse CDT bridge, WatchProviderContext, IDebugStrategy
