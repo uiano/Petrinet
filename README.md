@@ -11,7 +11,6 @@ Install it in MPS using `File->Settings->Plugins`.
 
 # Building
 1. Right-click on the project and select `Rebuild project`. Ignore the errors.
-1. Close the project and reopen it - that gets rid of the error messages within `Petrinet.plugin`. 
 1. If you change the `cup` or the `flex` file, make sure to call `Build CUP and Flex Java Files` from the right-click menu of the project.
    You can see the .cup and .flex files within Petrinet.parser by switching to the project files view in the project tool window.
 
