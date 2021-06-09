@@ -9,6 +9,9 @@ It is also possible to install the language as a plugin, although it is a rather
 For the plugin, download the current version of the [plugin](https://github.com/uiano/Petrinet/releases).
 Install it in MPS using `File->Settings->Plugins`.
 
+# Documentation
+There is a [manual](Documentation/manual.md) in the documentation folder. Moreover, a list of current TODO items is also located there.
+
 # Building
 1. Right-click on the project and select `Rebuild project`. Ignore the errors.
 1. If you change the `cup` or the `flex` file, make sure to call `Build CUP and Flex Java Files` from the right-click menu of the project.
