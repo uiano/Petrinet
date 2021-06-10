@@ -1,6 +1,8 @@
 TODO list for development of Petri net in MPS
 - improve manual
   - MOF diagram for structure
+- distribute some samples with the plugin (and refer in manual)
+- find a real external Petrinet tool for the text generation (and put into manual)
 - sort between manual and README
 - Could try to run build after generating CUP/FLEX: Make/Rebuild to get build script generated, use IMakeService and MakeSession.
     You may find examples in MPS codebase, e.g. MakeActionImpl in jetbrains.mps.ide.make solution.

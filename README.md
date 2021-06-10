@@ -10,7 +10,9 @@ For the plugin, download the current version of the [plugin](https://github.com/
 Install it in MPS using `File->Settings->Plugins`.
 
 # Documentation
-There is a [manual](Documentation/manual.md) in the documentation folder. Moreover, a list of current TODO items is also located there.
+There is a [manual](Documentation/manual.md) in the documentation folder together with 
+an explanation of the [Petri net language description](Documentation/language.md) in MPS.
+Moreover, a list of current [TODO items](Documentation/todo.txt) is also there.
 
 # Building
 1. Right-click on the project and select `Rebuild project`. Ignore the errors.
