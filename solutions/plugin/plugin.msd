@@ -37,7 +37,6 @@
     <module reference="a5e079c4-9ecf-42c7-a5b0-68cf697ed75f(Petrinet.runtime)" version="0" />
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="c87bcd61-a46d-4ed5-809b-596b5c0417af(plugin)" version="0" />
   </dependencyVersions>
 </solution>
