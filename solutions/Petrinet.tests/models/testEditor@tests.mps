@@ -7,7 +7,6 @@
     <use id="8b3711d4-03f0-437a-8056-ae4574191c5e" name="Petrinet" version="0" />
   </languages>
   <imports>
-    <import index="s7nw" ref="r:86a52669-4d57-41fd-b1a2-be56b4683a0e(Petrinet.typesystem)" />
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
   </imports>
   <registry>

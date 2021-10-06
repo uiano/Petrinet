@@ -1,0 +1,12 @@
+P	M	PRE,POST	NETZ 3:simple
+1	1	, 1 2
+2	2	 1, 2
+@
+place nr.	name	capacity	time
+1:			first   oo			0
+2:			second  oo			0
+@
+trans nr.	name	priority	time
+1:			trans   0			0
+2:			xx      0			0
+@
