@@ -26,8 +26,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <pathelement location="${artifacts.mps}/lib/util.jar" />
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
@@ -55,11 +54,37 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/Petrinet.zip/Petrinet/languages" />
-    <mkdir dir="${build.tmp}/default/Petrinet.zip/Petrinet/languages/Petrinet" />
+    <mkdir dir="${build.tmp}/default/Petrinet.zip/Petrinet/lib" />
     <mkdir dir="${build.tmp}/default/Petrinet.jar" />
     <mkdir dir="${build.tmp}/default/Petrinet.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/Petrinet.jar/META-INF/module.xml">
+    <echoxml file="${build.tmp}/default/Petrinet.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>Petrinet</id>
+        <name>Petrinet</name>
+        <description>simple executable Petrinet language</description>
+        <version>1.0</version>
+        <vendor url="uia.no/en">University of Agder</vendor>
+        <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.build</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.debugger.java</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
+        <depends>com.intellij.modules.platform</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/Petrinet.zip/Petrinet/lib/Petrinet.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/Petrinet.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/Petrinet.zip/Petrinet/languages" />
+    <mkdir dir="${build.tmp}/default/Petrinet.zip/Petrinet/languages/Petrinet" />
+    <mkdir dir="${build.tmp}/default/Petrinet.jar1" />
+    <mkdir dir="${build.tmp}/default/Petrinet.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/Petrinet.jar1/META-INF/module.xml">
       <module namespace="Petrinet" type="language" uuid="8b3711d4-03f0-437a-8056-ae4574191c5e">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -125,7 +150,7 @@
     <jar destfile="${build.tmp}/default/Petrinet.zip/Petrinet/languages/Petrinet/Petrinet.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/Petrinet" />
       <fileset dir="${basedir}/languages/Petrinet/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/Petrinet.jar" />
+      <fileset dir="${build.tmp}/default/Petrinet.jar1" />
     </jar>
     <mkdir dir="${build.tmp}/default/Petrinet-generator.jar" />
     <mkdir dir="${build.tmp}/default/Petrinet-generator.jar/META-INF" />
@@ -690,9 +715,8 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
@@ -746,9 +770,8 @@
         <pathelement path="${build.tmp}/java/out/Petrinet" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
@@ -804,9 +827,8 @@
         <fileset file="${basedir}/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.ant.execution.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
@@ -872,9 +894,8 @@
         <fileset file="${basedir}/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/mps-execution-configurations/jetbrains.mps.ant.execution.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
@@ -941,9 +962,8 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-java/lib/debugger-java.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -980,9 +1000,8 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
       </classpath>
     </javac>
@@ -1034,9 +1053,8 @@
         <fileset file="${basedir}/solutions/Petrinet.parser/external/java-cup-11b-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
