@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:1832050e-917e-4460-b43f-cb1e8d6d2ab4(Petrinet.models.generateInput)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="true" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="8b3711d4-03f0-437a-8056-ae4574191c5e" name="Petrinet" version="0" />
+    <devkit ref="d00cb95e-ed5a-4c2d-b420-7f7f8e90ff34(PetrinetDev)" />
   </languages>
   <imports />
   <registry>
