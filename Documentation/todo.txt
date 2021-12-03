@@ -18,5 +18,4 @@ TODO list for development of Petri net in MPS
 - find better way for project path than absolute path in file->settings->path variables
 - remove all warnings and notifications
 - create unit tests for the parser
-- create unit tests for text generation
 - make TODO items into issues
