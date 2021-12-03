@@ -48,3 +48,7 @@ You right-click a model that uses `PetrinetDev`,
 and select `Import Petrinet text file`.
 Now you can choose your input file and then the text is transformed into MPS format 
 and the resulting specification is placed in your model.
+
+## Commenting out code
+Parts of the code can be commented out using <kbd>Ctrl</kbd> + <kbd>/</kbd>.
+Commenting out a line can be done by selecting the `place` or `transition` keyword before doing this. Does your keyboard not have a <kbd>/</kbd> key (entering <kbd>/</kbd> through a keybind like <kbd>shift</kbd> + <kbd>7</kbd> doesn't count), can the keymap be changed in `File => settings => Keymap => Editor Actions => Comment`.

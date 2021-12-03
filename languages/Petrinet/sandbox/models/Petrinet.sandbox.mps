@@ -29,21 +29,6 @@
   </registry>
   <node concept="17AsaI" id="6mCZXi$8zlX">
     <property role="TrG5h" value="PetriHeil" />
-    <node concept="1BlLYo" id="6mCZXi$8zm0" role="17AsaH">
-      <property role="TrG5h" value="tt" />
-      <node concept="1BlLBn" id="6mCZXi$8zmx" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zm6" resolve="p3" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zmA" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zme" resolve="p1" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zmI" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zme" resolve="p1" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zmN" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8zme" resolve="p1" />
-      </node>
-    </node>
     <node concept="2pD$ho" id="6mCZXi$8zm6" role="17AsaH">
       <property role="TrG5h" value="p3" />
       <property role="2pD$hs" value="3" />
@@ -56,6 +41,18 @@
       <property role="TrG5h" value="p6" />
       <property role="2pD$hs" value="2" />
     </node>
+    <node concept="1BlLYo" id="6mCZXi$8zm0" role="17AsaH">
+      <property role="TrG5h" value="tt" />
+      <node concept="1BlLBn" id="6mCZXi$8zmx" role="1BlL$W">
+        <ref role="1BlLBg" node="6mCZXi$8zm6" resolve="p3" />
+      </node>
+      <node concept="1BlLBn" id="6mCZXi$8zmA" role="1BlL$W">
+        <ref role="1BlLBg" node="6mCZXi$8zme" resolve="p1" />
+      </node>
+      <node concept="1BlLBn" id="6mCZXi$8zmN" role="1BlL$Y">
+        <ref role="1BlLBg" node="6mCZXi$8zmp" resolve="p6" />
+      </node>
+    </node>
     <node concept="1BlLYo" id="6mCZXi$8zmZ" role="17AsaH">
       <property role="TrG5h" value="hha" />
       <node concept="1BlLBn" id="6mCZXi$8zna" role="1BlL$W">
@@ -67,9 +64,6 @@
       <node concept="1BlLBn" id="6mCZXi$8znu" role="1BlL$Y">
         <ref role="1BlLBg" node="6mCZXi$8zmp" resolve="p6" />
       </node>
-    </node>
-    <node concept="1BlLYo" id="6mCZXi$8znI" role="17AsaH">
-      <property role="TrG5h" value="yuydf" />
     </node>
   </node>
   <node concept="17AsaI" id="6mCZXi$8znX">
@@ -355,6 +349,10 @@
       <property role="TrG5h" value="autumn" />
       <property role="2pD$hs" value="0" />
     </node>
+    <node concept="2pD$ho" id="6a9xh1S$v5z" role="17AsaH">
+      <property role="TrG5h" value="end" />
+      <property role="2pD$hs" value="0" />
+    </node>
     <node concept="1BlLYo" id="2gnXoCKYF7a" role="17AsaH">
       <property role="TrG5h" value="march20" />
       <node concept="1BlLBn" id="2gnXoCKYF7q" role="1BlL$W">
@@ -387,105 +385,28 @@
       <node concept="1BlLBn" id="2gnXoCKYF9r" role="1BlL$W">
         <ref role="1BlLBg" node="2gnXoCKYF6O" resolve="autumn" />
       </node>
-      <node concept="1BlLBn" id="2gnXoCKYF9t" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKYF6Y" resolve="winter" />
+      <node concept="1BlLBn" id="6a9xh1S$v5Z" role="1BlL$Y">
+        <ref role="1BlLBg" node="6a9xh1S$v5z" resolve="end" />
       </node>
     </node>
   </node>
-  <node concept="17AsaI" id="2gnXoCKZAl7">
-    <property role="TrG5h" value="mutex" />
-    <node concept="2pD$ho" id="2gnXoCKZAlh" role="17AsaH">
-      <property role="TrG5h" value="working1" />
+  <node concept="17AsaI" id="6a9xh1S$mjx">
+    <property role="TrG5h" value="seasonsMe" />
+    <node concept="2pD$ho" id="6a9xh1S$mjX" role="17AsaH">
+      <property role="TrG5h" value="winter" />
       <property role="2pD$hs" value="1" />
     </node>
-    <node concept="2pD$ho" id="2gnXoCKZAlm" role="17AsaH">
-      <property role="TrG5h" value="pending1" />
+    <node concept="2pD$ho" id="6a9xh1S$mkb" role="17AsaH">
+      <property role="TrG5h" value="spring" />
       <property role="2pD$hs" value="0" />
     </node>
-    <node concept="2pD$ho" id="2gnXoCKZAlu" role="17AsaH">
-      <property role="TrG5h" value="critical1" />
-      <property role="2pD$hs" value="0" />
-    </node>
-    <node concept="2pD$ho" id="2gnXoCKZAlC" role="17AsaH">
-      <property role="TrG5h" value="working2" />
-      <property role="2pD$hs" value="1" />
-    </node>
-    <node concept="2pD$ho" id="2gnXoCKZAlO" role="17AsaH">
-      <property role="TrG5h" value="pending2" />
-      <property role="2pD$hs" value="0" />
-    </node>
-    <node concept="2pD$ho" id="2gnXoCKZAm2" role="17AsaH">
-      <property role="TrG5h" value="critical2" />
-      <property role="2pD$hs" value="0" />
-    </node>
-    <node concept="2pD$ho" id="2gnXoCKZAmk" role="17AsaH">
-      <property role="TrG5h" value="mutex" />
-      <property role="2pD$hs" value="1" />
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAmA" role="17AsaH">
-      <property role="TrG5h" value="wait4mutex1" />
-      <node concept="1BlLBn" id="2gnXoCKZAmK" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAlh" resolve="working1" />
+    <node concept="1BlLYo" id="6a9xh1S$mkR" role="17AsaH">
+      <property role="TrG5h" value="march20" />
+      <node concept="1BlLBn" id="6a9xh1S$mle" role="1BlL$W">
+        <ref role="1BlLBg" node="6a9xh1S$mjX" resolve="winter" />
       </node>
-      <node concept="1BlLBn" id="2gnXoCKZAmM" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAlm" resolve="pending1" />
-      </node>
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAn0" role="17AsaH">
-      <property role="TrG5h" value="enterCritical1" />
-      <node concept="1BlLBn" id="2gnXoCKZAnd" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAlm" resolve="pending1" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAni" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAmk" resolve="mutex" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAnm" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAlu" resolve="critical1" />
-      </node>
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAnC" role="17AsaH">
-      <property role="TrG5h" value="leaveCritical1" />
-      <node concept="1BlLBn" id="2gnXoCKZAnT" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAlu" resolve="critical1" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAnV" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAlh" resolve="working1" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAo0" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAmk" resolve="mutex" />
-      </node>
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAo4" role="17AsaH">
-      <property role="TrG5h" value="wait4mutex2" />
-      <node concept="1BlLBn" id="2gnXoCKZAoG" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAlC" resolve="working2" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAoJ" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAlO" resolve="pending2" />
-      </node>
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAo7" role="17AsaH">
-      <property role="TrG5h" value="enterCritical2" />
-      <node concept="1BlLBn" id="2gnXoCKZAoM" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAlO" resolve="pending2" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAo9" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAmk" resolve="mutex" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAoQ" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAm2" resolve="critical2" />
-      </node>
-    </node>
-    <node concept="1BlLYo" id="2gnXoCKZAob" role="17AsaH">
-      <property role="TrG5h" value="leaveCritical2" />
-      <node concept="1BlLBn" id="2gnXoCKZAoT" role="1BlL$W">
-        <ref role="1BlLBg" node="2gnXoCKZAm2" resolve="critical2" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAoW" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAlC" resolve="working2" />
-      </node>
-      <node concept="1BlLBn" id="2gnXoCKZAoe" role="1BlL$Y">
-        <ref role="1BlLBg" node="2gnXoCKZAmk" resolve="mutex" />
+      <node concept="1BlLBn" id="6a9xh1S$mlg" role="1BlL$Y">
+        <ref role="1BlLBg" node="6a9xh1S$mkb" resolve="spring" />
       </node>
     </node>
   </node>
