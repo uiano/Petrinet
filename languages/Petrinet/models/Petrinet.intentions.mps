@@ -9,7 +9,6 @@
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="obw6" ref="r:eebd018c-508b-4558-a3b8-240e1dd055ec(Petrinet.intentions)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -299,7 +298,7 @@
                                     <node concept="2OqwBi" id="7adTP2e9RCE" role="2Oq$k0">
                                       <node concept="2OqwBi" id="7adTP2e9RCF" role="2Oq$k0">
                                         <node concept="37vLTw" id="7adTP2e9RCG" role="2Oq$k0">
-                                          <ref role="3cqZAo" to="obw6:7adTP2e9RCP" resolve="it2" />
+                                          <ref role="3cqZAo" node="7adTP2e9RCP" resolve="it2" />
                                         </node>
                                         <node concept="3TrEf2" id="7adTP2e9RCH" role="2OqNvi">
                                           <ref role="3Tt5mk" to="m6ps:2_lTqLe0JLW" resolve="target" />
