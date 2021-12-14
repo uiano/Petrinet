@@ -10,7 +10,6 @@
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -146,7 +145,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -503,12 +501,17 @@
                       </node>
                     </node>
                     <node concept="3EllGN" id="dqkUihpsZ4" role="37vLTJ">
-                      <node concept="2OqwBi" id="dqkUihptOb" role="3ElVtu">
-                        <node concept="Jnkvi" id="dqkUihptol" role="2Oq$k0">
-                          <ref role="1M0zk5" node="dqkUihonqR" resolve="place" />
+                      <node concept="2OqwBi" id="37fAAiWnUDC" role="3ElVtu">
+                        <node concept="2OqwBi" id="dqkUihptOb" role="2Oq$k0">
+                          <node concept="Jnkvi" id="dqkUihptol" role="2Oq$k0">
+                            <ref role="1M0zk5" node="dqkUihonqR" resolve="place" />
+                          </node>
+                          <node concept="3TrcHB" id="37fAAiWnSVq" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
                         </node>
-                        <node concept="2qgKlT" id="dqkUihpuoC" role="2OqNvi">
-                          <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                        <node concept="liA8E" id="37fAAiWnVEd" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="dqkUihpsqG" role="3ElQJh">
