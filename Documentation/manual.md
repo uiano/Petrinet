@@ -36,10 +36,13 @@ You can see the generated code by right-clicking a specification and selecting `
 Please note that the tool generates two types of output: 
 a Java file that can be run, and a `.pn` file that can be used in an external tool.
 
-## Execution
+## Execution(Compiled)
 After having built the code for your specification, 
 you can run it by right-clicking and selecting `Run`.
 The runtime results (transitions) are shown in the Run window.
+
+## Execution(Interpreted)
+An interpreter can be run from the intentions menu (opened by clicking the light bulb menu or <kbd>Alt</kbd> + <kbd>Enter</kbd> in Petrinet code). The interpreter allows to run the code without compilation and the output appears in the `Messages` tab at the bottom of the screen. The interpreter is limited to firing 100 000 transitions before it stops, for Petri nets that need even transitions the code should be compiled instead.
 
 ## External Import
 It is possible to import Petri net text files that are following 
