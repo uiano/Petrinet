@@ -704,7 +704,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="7adTP2dZBu2" role="3uHU7w">
-                    <property role="Xl_RC" value="´ appears more than once as an input to this transition." />
+                    <property role="Xl_RC" value="´ appears more than once as an output to this transition." />
                   </node>
                 </node>
                 <node concept="2GrUjf" id="7adTP2dZBu3" role="1urrMF">
