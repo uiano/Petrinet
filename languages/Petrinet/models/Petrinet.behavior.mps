@@ -29,7 +29,6 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1239709250944" name="jetbrains.mps.baseLanguage.structure.PrefixIncrementExpression" flags="nn" index="2$rviw" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -67,6 +66,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -74,6 +74,7 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
@@ -117,6 +118,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -754,20 +756,40 @@
               <node concept="3clFbS" id="37fAAiWb9CC" role="3clFbx">
                 <node concept="2xdQw9" id="37fAAiWjp8W" role="3cqZAp">
                   <property role="2xdLsb" value="gZ5fh_4/error" />
-                  <node concept="Xl_RD" id="37fAAiWjp8Y" role="9lYJi">
-                    <property role="Xl_RC" value="Execution took more than 1e7 iterations, possible infinite loop, exiting" />
+                  <node concept="2OqwBi" id="2viaSUnlsQu" role="9lYJi">
+                    <node concept="2OqwBi" id="2viaSUnllE0" role="2Oq$k0">
+                      <node concept="Xl_RD" id="37fAAiWjp8Y" role="2Oq$k0">
+                        <property role="Xl_RC" value="Stopping the execution because the Petri net did not exit after " />
+                      </node>
+                      <node concept="liA8E" id="2viaSUnlnL6" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String)" resolve="concat" />
+                        <node concept="2YIFZM" id="2viaSUnlpHR" role="37wK5m">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+                          <node concept="37vLTw" id="2viaSUnlqc2" role="37wK5m">
+                            <ref role="3cqZAo" node="2viaSUnlgqy" resolve="max_iterations" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2viaSUnlu9a" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String)" resolve="concat" />
+                      <node concept="Xl_RD" id="2viaSUnluCc" role="37wK5m">
+                        <property role="Xl_RC" value=" iterations. Programs requiring more iterations or running indefinitely need to be compiled instead." />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="3zACq4" id="37fAAiWbeRE" role="3cqZAp" />
               </node>
-              <node concept="3clFbC" id="37fAAiWbcxw" role="3clFbw">
-                <node concept="3cmrfG" id="37fAAiWbdCk" role="3uHU7w">
-                  <property role="3cmrfH" value="10000000" />
-                </node>
-                <node concept="2$rviw" id="37fAAiWba4e" role="3uHU7B">
-                  <node concept="37vLTw" id="37fAAiWbav9" role="2$L3a6">
+              <node concept="3clFbC" id="2viaSUnl5Wr" role="3clFbw">
+                <node concept="3uNrnE" id="2viaSUnl9yW" role="3uHU7B">
+                  <node concept="37vLTw" id="2viaSUnl9yY" role="2$L3a6">
                     <ref role="3cqZAo" node="37fAAiWb5jh" resolve="counter" />
                   </node>
+                </node>
+                <node concept="37vLTw" id="2viaSUnlkt0" role="3uHU7w">
+                  <ref role="3cqZAo" node="2viaSUnlgqy" resolve="max_iterations" />
                 </node>
               </node>
             </node>
@@ -1039,6 +1061,10 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="37vLTG" id="2viaSUnlgqy" role="3clF46">
+        <property role="TrG5h" value="max_iterations" />
+        <node concept="10Oyi0" id="2viaSUnlgqx" role="1tU5fm" />
       </node>
     </node>
   </node>
