@@ -109,9 +109,6 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
-      <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
-        <reference id="3189788309731922643" name="language" index="1E1Vl2" />
-      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -369,11 +366,6 @@
             <ref role="1Busuk" to="ffeo:sx8XDLCp97" resolve="jetbrains.mps.execution.util" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2jnCIbhdu9S" role="3bR37C">
-          <node concept="Rbm2T" id="2jnCIbhdu9T" role="1SiIV1">
-            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbl" role="2G$12L">
         <property role="TrG5h" value="Petrinet.plugin" />
@@ -459,6 +451,11 @@
         <node concept="1SiIV0" id="V3P7JbYhm4" role="3bR37C">
           <node concept="3bR9La" id="V3P7JbYhm5" role="1SiIV1">
             <ref role="3bR37D" node="V3P7JbYhbf" resolve="Petrinet" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4arbPUzEJy0" role="3bR37C">
+          <node concept="3bR9La" id="4arbPUzEJy1" role="1SiIV1">
+            <ref role="3bR37D" node="t9j5RdOipM" resolve="Petrinet.examples" />
           </node>
         </node>
       </node>
@@ -672,9 +669,6 @@
         <node concept="3LEDTM" id="V3P7JbYhm$" role="3LEDUa">
           <ref role="3LEDTN" node="V3P7JbYhbx" resolve="Petrinet.tools" />
         </node>
-        <node concept="3LEDTy" id="2jnCIbhduak" role="3LEDUa">
-          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-        </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbO" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -719,6 +713,63 @@
               </node>
             </node>
             <node concept="3qWCbU" id="V3P7JbYhdG" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="t9j5RdOipM" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Petrinet.examples" />
+        <property role="3LESm3" value="ac8ac0a2-0d04-4832-bd82-d4cb1c072a37" />
+        <node concept="55IIr" id="t9j5RdOipP" role="3LF7KH">
+          <node concept="2Ry0Ak" id="t9j5RdOite" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4arbPUzDIf3" role="2Ry0An">
+              <property role="2Ry0Am" value="Petrinet.examples" />
+              <node concept="2Ry0Ak" id="4arbPUzDIfi" role="2Ry0An">
+                <property role="2Ry0Am" value="Petrinet.examples.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4arbPUzEJx6" role="3bR37C">
+          <node concept="3bR9La" id="4arbPUzEJx7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4arbPUzEJx8" role="3bR37C">
+          <node concept="3bR9La" id="4arbPUzEJx9" role="1SiIV1">
+            <ref role="3bR37D" node="V3P7JbYhbf" resolve="Petrinet" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4arbPUzEJxa" role="3bR37C">
+          <node concept="3bR9La" id="4arbPUzEJxb" role="1SiIV1">
+            <ref role="3bR37D" node="V3P7JbYhbl" resolve="Petrinet.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4arbPUzEJxc" role="3bR37C">
+          <node concept="3bR9La" id="4arbPUzEJxd" role="1SiIV1">
+            <ref role="3bR37D" node="V3P7JbYhbO" resolve="Petrinet.runtime" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4arbPUzEJxi" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4arbPUzEJxj" role="1HemKq">
+            <node concept="55IIr" id="4arbPUzEJxe" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4arbPUzEJxf" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4arbPUzEJxg" role="2Ry0An">
+                  <property role="2Ry0Am" value="Petrinet.examples" />
+                  <node concept="2Ry0Ak" id="4arbPUzEJxh" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4arbPUzEJxk" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
