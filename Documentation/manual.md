@@ -52,3 +52,10 @@ and the resulting specification is placed in your model.
 ## Commenting out code
 Parts of the code can be commented out using <kbd>Ctrl</kbd> + <kbd>/</kbd>.
 Commenting out a line can be done by selecting the `place` or `transition` keyword before doing this. Does your keyboard not have a <kbd>/</kbd> key (entering <kbd>/</kbd> through a keybind like <kbd>shift</kbd> + <kbd>7</kbd> doesn't count), can the keymap be changed in `File => settings => Keymap => Editor Actions => Comment`.
+
+## Testing
+The language includes a number of unit tests. These tests need to know where the project is located.
+Please set the variable `MPS_Project_Path` to the root for your projects (`/Users/me/MPSProjects`).
+You can set the variable in `File->Settings->Appearance&Behaviour->Path Variables`.
+
+
