@@ -19,3 +19,4 @@ TODO list for development of Petri net in MPS
 - remove all warnings and notifications
 - create unit tests for the parser
 - make TODO items into issues
+- create videos for Petrinet use and aspects
