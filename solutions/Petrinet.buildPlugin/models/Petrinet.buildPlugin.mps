@@ -4,7 +4,7 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -108,6 +108,9 @@
       <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
+      </concept>
+      <concept id="8971171305100238972" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyTargetLanguage" flags="ng" index="Rbm2T">
+        <reference id="3189788309731922643" name="language" index="1E1Vl2" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
@@ -366,6 +369,11 @@
             <ref role="1Busuk" to="ffeo:sx8XDLCp97" resolve="jetbrains.mps.execution.util" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4uj1Ztdphcd" role="3bR37C">
+          <node concept="Rbm2T" id="4uj1Ztdphce" role="1SiIV1">
+            <ref role="1E1Vl2" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbl" role="2G$12L">
         <property role="TrG5h" value="Petrinet.plugin" />
@@ -451,11 +459,6 @@
         <node concept="1SiIV0" id="V3P7JbYhm4" role="3bR37C">
           <node concept="3bR9La" id="V3P7JbYhm5" role="1SiIV1">
             <ref role="3bR37D" node="V3P7JbYhbf" resolve="Petrinet" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4arbPUzEJy0" role="3bR37C">
-          <node concept="3bR9La" id="4arbPUzEJy1" role="1SiIV1">
-            <ref role="3bR37D" node="t9j5RdOipM" resolve="Petrinet.examples" />
           </node>
         </node>
       </node>
@@ -669,6 +672,9 @@
         <node concept="3LEDTM" id="V3P7JbYhm$" role="3LEDUa">
           <ref role="3LEDTN" node="V3P7JbYhbx" resolve="Petrinet.tools" />
         </node>
+        <node concept="3LEDTy" id="4uj1ZtdphcD" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+        </node>
       </node>
       <node concept="1E1JtA" id="V3P7JbYhbO" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -731,26 +737,6 @@
                 <property role="2Ry0Am" value="Petrinet.examples.msd" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4arbPUzEJx6" role="3bR37C">
-          <node concept="3bR9La" id="4arbPUzEJx7" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4arbPUzEJx8" role="3bR37C">
-          <node concept="3bR9La" id="4arbPUzEJx9" role="1SiIV1">
-            <ref role="3bR37D" node="V3P7JbYhbf" resolve="Petrinet" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4arbPUzEJxa" role="3bR37C">
-          <node concept="3bR9La" id="4arbPUzEJxb" role="1SiIV1">
-            <ref role="3bR37D" node="V3P7JbYhbl" resolve="Petrinet.plugin" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4arbPUzEJxc" role="3bR37C">
-          <node concept="3bR9La" id="4arbPUzEJxd" role="1SiIV1">
-            <ref role="3bR37D" node="V3P7JbYhbO" resolve="Petrinet.runtime" />
           </node>
         </node>
         <node concept="1BupzO" id="4arbPUzEJxi" role="3bR31x">
