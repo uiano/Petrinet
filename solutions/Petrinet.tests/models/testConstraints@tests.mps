@@ -2,7 +2,7 @@
 <model ref="r:85fba8a3-a6a3-454d-bb2d-30f1484c2834(testConstraints@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8b3711d4-03f0-437a-8056-ae4574191c5e" name="Petrinet" version="0" />
   </languages>
@@ -29,6 +29,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -64,6 +65,7 @@
   </registry>
   <node concept="1lH9Xt" id="1yOr9ESlfSV">
     <property role="TrG5h" value="doublePetrinetName" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1yOr9ESlfSW" role="1SKRRt">
       <node concept="17AsaI" id="1yOr9ESlfSX" role="1qenE9">
         <property role="TrG5h" value="PN_1" />
@@ -91,6 +93,7 @@
   </node>
   <node concept="1lH9Xt" id="2TMDTFvzYua">
     <property role="TrG5h" value="doublePlaceName" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2TMDTFvzYzl" role="1SKRRt">
       <node concept="17AsaI" id="2TMDTFvzYzk" role="1qenE9">
         <property role="TrG5h" value="placeNet" />
@@ -121,6 +124,7 @@
   </node>
   <node concept="1lH9Xt" id="1yOr9ESleoQ">
     <property role="TrG5h" value="doubleTransitionName" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="1yOr9ESleoR" role="1SKRRt">
       <node concept="17AsaI" id="1yOr9ESleoS" role="1qenE9">
         <property role="TrG5h" value="transNet" />
@@ -149,6 +153,7 @@
   </node>
   <node concept="1lH9Xt" id="2GieVSMf$k6">
     <property role="TrG5h" value="placeReference" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2GieVSMf$k7" role="1SKRRt">
       <node concept="17AsaI" id="2GieVSMf$k8" role="1qenE9">
         <property role="TrG5h" value="pp" />

@@ -2,7 +2,7 @@
 <model ref="r:0b61f797-aab2-4d9b-aaa2-97a3582baf3d(testEditor@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="8b3711d4-03f0-437a-8056-ae4574191c5e" name="Petrinet" version="0" />
   </languages>
