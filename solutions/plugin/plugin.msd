@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="plugin" uuid="c87bcd61-a46d-4ed5-809b-596b5c0417af" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="plugin" uuid="c87bcd61-a46d-4ed5-809b-596b5c0417af" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">8b3711d4-03f0-437a-8056-ae4574191c5e(Petrinet)</dependency>
     <dependency reexport="false">a5e079c4-9ecf-42c7-a5b0-68cf697ed75f(Petrinet.runtime)</dependency>
@@ -23,7 +22,7 @@
     <language slang="l:fa8aeae9-4df9-4e13-bfb1-9b04c67ddb77:jetbrains.mps.debugger.java.customViewers" version="1" />
     <language slang="l:80208897-4572-437d-b50e-8f050cba9566:jetbrains.mps.debugger.java.privateMembers" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
-    <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="5" />
+    <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="6" />
     <language slang="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
