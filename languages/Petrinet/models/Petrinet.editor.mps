@@ -106,7 +106,9 @@
       </concept>
       <concept id="2314756748950088783" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableReference" flags="ng" index="3yx0qK" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1178539929008" name="jetbrains.mps.lang.editor.structure.TransformationMenuVariableDeclaration" flags="ig" index="1At2My">
@@ -859,6 +861,22 @@
       </node>
       <node concept="Vb9p2" id="3Fdme434BEQ" role="3F10Kt">
         <property role="Vbekb" value="g1_kEg4/ITALIC" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6CyG65hr_3C">
+    <ref role="1XX52x" to="m6ps:6CyG65hrz1M" resolve="CommentLine" />
+    <node concept="3EZMnI" id="6CyG65hu3tU" role="2wV5jI">
+      <node concept="l2Vlx" id="6CyG65hu3tV" role="2iSdaV" />
+      <node concept="3F0ifn" id="6CyG65hu3xp" role="3EZMnx">
+        <property role="3F0ifm" value="#" />
+        <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
+      </node>
+      <node concept="3F0A7n" id="6CyG65hu3AA" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
       </node>
     </node>
   </node>

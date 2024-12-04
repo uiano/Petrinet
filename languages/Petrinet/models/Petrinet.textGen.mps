@@ -6,8 +6,8 @@
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="m6ps" ref="r:aa993cc3-23e0-40bb-890f-6ebd24ec4a45(Petrinet.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="56pr" ref="r:a12f2c85-2800-4973-9b71-96eef14a0327(Petrinet.behavior)" implicit="true" />
   </imports>
@@ -745,6 +745,12 @@
           <node concept="l8MVK" id="3Fdme43PZlh" role="lcghm" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="34VJ$XqeVYK">
+    <ref role="WuzLi" to="m6ps:6CyG65hrz1M" resolve="CommentLine" />
+    <node concept="11bSqf" id="34VJ$XqeVYL" role="11c4hB">
+      <node concept="3clFbS" id="34VJ$XqeVYM" role="2VODD2" />
     </node>
   </node>
 </model>
