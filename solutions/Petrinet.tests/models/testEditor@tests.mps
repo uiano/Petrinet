@@ -29,9 +29,6 @@
       <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
         <property id="1227184461946" name="keys" index="2TTd_B" />
       </concept>
-      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
-        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
-      </concept>
       <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
         <reference id="4239542196496929559" name="action" index="1iFR8X" />
       </concept>
@@ -56,6 +53,7 @@
       <concept id="9147849992933078337" name="Petrinet.structure.Place" flags="ng" index="2pD$ho">
         <property id="9147849992933078341" name="tokens" index="2pD$hs" />
       </concept>
+      <concept id="7647869049253015666" name="Petrinet.structure.CommentLine" flags="ng" index="Vj80j" />
       <concept id="9072452311598371297" name="Petrinet.structure.PetriNet" flags="ng" index="17AsaI">
         <child id="9072452311598371298" name="elements" index="17AsaH" />
       </concept>
@@ -69,9 +67,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2XOHcx" id="2TMDTFv$7Rw">
-    <property role="2XOHcw" value="${MPS_Project_Home}/Petrinet" />
-  </node>
   <node concept="LiM7Y" id="2GieVSMfIOp">
     <property role="TrG5h" value="typePlace" />
     <node concept="1qefOq" id="2GieVSMfIOD" role="25YQCW">
@@ -165,6 +160,56 @@
     <node concept="3clFbS" id="2GieVSMgJ2_" role="LjaKd">
       <node concept="2TK7Tu" id="2GieVSMgJ2A" role="3cqZAp">
         <property role="2TTd_B" value="transition t: a, b =&gt; b" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="34VJ$XqrsUo">
+    <property role="TrG5h" value="typeCommentLine" />
+    <node concept="1qefOq" id="34VJ$XqrsYS" role="25YQCW">
+      <node concept="17AsaI" id="34VJ$XqrsYR" role="1qenE9">
+        <property role="TrG5h" value="abc" />
+        <node concept="2pD$ho" id="34VJ$Xqrt0t" role="17AsaH">
+          <property role="TrG5h" value="a" />
+          <property role="2pD$hs" value="1" />
+        </node>
+        <node concept="1ttcNA" id="34VJ$XqrtH7" role="17AsaH">
+          <node concept="LIFWc" id="34VJ$XqrtH8" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="Constant_qmnr5n_a" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="34VJ$Xqrt5Q" role="25YQFr">
+      <node concept="17AsaI" id="34VJ$Xqrt5P" role="1qenE9">
+        <property role="TrG5h" value="abc" />
+        <node concept="2pD$ho" id="34VJ$Xqrt67" role="17AsaH">
+          <property role="TrG5h" value="a" />
+          <property role="2pD$hs" value="1" />
+        </node>
+        <node concept="Vj80j" id="34VJ$Xqrt6x" role="17AsaH">
+          <property role="TrG5h" value="b" />
+        </node>
+        <node concept="2pD$ho" id="34VJ$Xqrt7$" role="17AsaH">
+          <property role="TrG5h" value="c" />
+          <property role="2pD$hs" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="34VJ$Xqrtbt" role="LjaKd">
+      <node concept="2TK7Tu" id="34VJ$Xqrtbs" role="3cqZAp">
+        <property role="2TTd_B" value="#b" />
+      </node>
+      <node concept="2HxZob" id="34VJ$Xqrtr9" role="3cqZAp">
+        <node concept="1iFQzN" id="34VJ$Xqrtr_" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:6KwcZ1G3Pjm" resolve="Insert" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="34VJ$XqrtwC" role="3cqZAp">
+        <property role="2TTd_B" value="place c(2)" />
       </node>
     </node>
   </node>
