@@ -15,7 +15,6 @@
       <concept id="9147849992933078337" name="Petrinet.structure.Place" flags="ng" index="2pD$ho">
         <property id="9147849992933078341" name="tokens" index="2pD$hs" />
       </concept>
-      <concept id="7647869049253015666" name="Petrinet.structure.CommentLine" flags="ng" index="Vj80j" />
       <concept id="9072452311598371297" name="Petrinet.structure.PetriNet" flags="ng" index="17AsaI">
         <child id="9072452311598371298" name="elements" index="17AsaH" />
       </concept>
@@ -68,64 +67,48 @@
     </node>
   </node>
   <node concept="17AsaI" id="6mCZXi$8znX">
-    <property role="TrG5h" value="PN11111_1" />
-    <node concept="2pD$ho" id="6mCZXi$8znY" role="17AsaH">
-      <property role="TrG5h" value="first" />
-      <property role="2pD$hs" value="3" />
+    <property role="TrG5h" value="PN_1" />
+    <node concept="2pD$ho" id="kBhC3RGuaq" role="17AsaH">
+      <property role="TrG5h" value="P1" />
+      <property role="2pD$hs" value="1" />
     </node>
-    <node concept="Vj80j" id="34VJ$XqrrE5" role="17AsaH">
-      <property role="TrG5h" value="Test asd daw" />
-    </node>
-    <node concept="2pD$ho" id="6mCZXi$8zo4" role="17AsaH">
-      <property role="TrG5h" value="xyz" />
-      <property role="2pD$hs" value="8" />
-    </node>
-    <node concept="2pD$ho" id="6mCZXi$8zoe" role="17AsaH">
-      <property role="TrG5h" value="second" />
-      <property role="2pD$hs" value="5" />
-    </node>
-    <node concept="1BlLYo" id="6mCZXi$8zoq" role="17AsaH">
-      <property role="TrG5h" value="trans1" />
-      <node concept="1BlLBn" id="6mCZXi$8zow" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8znY" resolve="first" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zo_" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zoe" resolve="second" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zoW" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8zoL" resolve="third" />
-      </node>
-      <node concept="1BlLBn" id="6mCZXi$8zq2" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8zpM" resolve="fourth" />
-      </node>
-    </node>
-    <node concept="2pD$ho" id="6mCZXi$8zoL" role="17AsaH">
-      <property role="TrG5h" value="third" />
+    <node concept="2pD$ho" id="kBhC3RGubH" role="17AsaH">
+      <property role="TrG5h" value="P2" />
       <property role="2pD$hs" value="0" />
     </node>
-    <node concept="1BlLYo" id="6mCZXi$8zpc" role="17AsaH">
-      <property role="TrG5h" value="trans2" />
-      <node concept="1BlLBn" id="6mCZXi$8zpo" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zoL" resolve="third" />
+    <node concept="2pD$ho" id="kBhC3RGucA" role="17AsaH">
+      <property role="TrG5h" value="P3" />
+      <property role="2pD$hs" value="2" />
+    </node>
+    <node concept="2pD$ho" id="kBhC3RGucD" role="17AsaH">
+      <property role="TrG5h" value="P4" />
+      <property role="2pD$hs" value="1" />
+    </node>
+    <node concept="1BlLYo" id="kBhC3RGudy" role="17AsaH">
+      <property role="TrG5h" value="T1" />
+      <node concept="1BlLBn" id="kBhC3RGud$" role="1BlL$W">
+        <ref role="1BlLBg" node="kBhC3RGuaq" resolve="P1" />
       </node>
-      <node concept="1BlLBn" id="6mCZXi$8zpq" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8znY" resolve="first" />
+      <node concept="1BlLBn" id="kBhC3RGud_" role="1BlL$Y">
+        <ref role="1BlLBg" node="kBhC3RGubH" resolve="P2" />
       </node>
-      <node concept="1BlLBn" id="6mCZXi$8zpv" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8zo4" resolve="xyz" />
+      <node concept="1BlLBn" id="kBhC3RGudA" role="1BlL$Y">
+        <ref role="1BlLBg" node="kBhC3RGucA" resolve="P3" />
       </node>
     </node>
-    <node concept="2pD$ho" id="6mCZXi$8zpM" role="17AsaH">
-      <property role="TrG5h" value="fourth" />
-      <property role="2pD$hs" value="0" />
-    </node>
-    <node concept="1BlLYo" id="6mCZXi$8zqm" role="17AsaH">
-      <property role="TrG5h" value="sdc" />
-      <node concept="1BlLBn" id="6mCZXi$8zqB" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zoe" resolve="second" />
+    <node concept="1BlLYo" id="kBhC3RGue3" role="17AsaH">
+      <property role="TrG5h" value="T2" />
+      <node concept="1BlLBn" id="kBhC3RGue5" role="1BlL$W">
+        <ref role="1BlLBg" node="kBhC3RGubH" resolve="P2" />
       </node>
-      <node concept="1BlLBn" id="6mCZXi$8zqD" role="1BlL$Y">
-        <ref role="1BlLBg" node="6mCZXi$8zoL" resolve="third" />
+      <node concept="1BlLBn" id="kBhC3RGue6" role="1BlL$W">
+        <ref role="1BlLBg" node="kBhC3RGucA" resolve="P3" />
+      </node>
+      <node concept="1BlLBn" id="kBhC3RGue7" role="1BlL$Y">
+        <ref role="1BlLBg" node="kBhC3RGuaq" resolve="P1" />
+      </node>
+      <node concept="1BlLBn" id="kBhC3RGuez" role="1BlL$Y">
+        <ref role="1BlLBg" node="kBhC3RGucD" resolve="P4" />
       </node>
     </node>
   </node>
