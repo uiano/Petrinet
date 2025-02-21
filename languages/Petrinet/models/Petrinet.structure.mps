@@ -142,6 +142,7 @@
   <node concept="1TIwiD" id="2iVRiibhQgC">
     <property role="EcuMT" value="2646952355035571240" />
     <property role="TrG5h" value="RT_Place" />
+    <property role="3GE5qa" value="Runtime" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="2iVRiibhQpf" role="1TKVEl">
       <property role="IQ2nx" value="2646952355035571791" />
@@ -154,11 +155,15 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7VNGhBBlvl1" resolve="Place" />
     </node>
+    <node concept="PrWs8" id="7w47ULZghS5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2iVRiibhQVE">
     <property role="EcuMT" value="2646952355035573994" />
     <property role="TrG5h" value="RT_Petrinet" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Runtime" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="2iVRiibhRdi" role="1TKVEi">
       <property role="IQ2ns" value="2646952355035575122" />
@@ -169,9 +174,9 @@
     <node concept="1TJgyj" id="2iVRiibhRo2" role="1TKVEi">
       <property role="IQ2ns" value="2646952355035575810" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="rt_elements" />
+      <property role="20kJfa" value="rt_places" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3yp7F__Vt9v" resolve="PetrinetElement" />
+      <ref role="20lvS9" node="2iVRiibhQgC" resolve="RT_Place" />
     </node>
   </node>
 </model>

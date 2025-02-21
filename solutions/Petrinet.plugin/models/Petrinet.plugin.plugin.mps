@@ -1383,33 +1383,9 @@
           </node>
         </node>
         <node concept="3clFbH" id="2iVRiibsluV" role="3cqZAp" />
-        <node concept="3clFbF" id="2iVRiibslWf" role="3cqZAp">
-          <node concept="2OqwBi" id="2iVRiibsmkm" role="3clFbG">
-            <node concept="37vLTw" id="2iVRiibslWd" role="2Oq$k0">
-              <ref role="3cqZAo" node="2iVRiibsj2I" resolve="msg" />
-            </node>
-            <node concept="liA8E" id="2iVRiibsv7t" role="2OqNvi">
-              <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
-              <node concept="2ShNRf" id="2iVRiibsvcc" role="37wK5m">
-                <node concept="1pGfFk" id="2iVRiibsypq" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
-                  <node concept="Rm8GO" id="2iVRiibsyBl" role="37wK5m">
-                    <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                    <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
-                  </node>
-                  <node concept="Xl_RD" id="2iVRiibs$_G" role="37wK5m">
-                    <property role="Xl_RC" value="Instantiating Runtime Objects ..." />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2iVRiibwTaF" role="3cqZAp" />
         <node concept="3cpWs8" id="2iVRiibrEr8" role="3cqZAp">
           <node concept="3cpWsn" id="2iVRiibrErb" role="3cpWs9">
-            <property role="TrG5h" value="RT_Petrinet" />
+            <property role="TrG5h" value="theRT_PetriNet" />
             <node concept="3Tqbb2" id="2iVRiibrEr7" role="1tU5fm">
               <ref role="ehGHo" to="m6ps:2iVRiibhQVE" resolve="RT_Petrinet" />
             </node>
@@ -1422,7 +1398,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1d7Fn5HsC4P" role="3cqZAp" />
         <node concept="3clFbF" id="1d7Fn5HsGot" role="3cqZAp">
           <node concept="37vLTI" id="1d7Fn5HsKQG" role="3clFbG">
             <node concept="1PxgMI" id="1d7Fn5Ht78N" role="37vLTx">
@@ -1451,7 +1426,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2iVRiibsA8L" role="3cqZAp" />
         <node concept="3clFbF" id="1d7Fn5HtaiF" role="3cqZAp">
           <node concept="2OqwBi" id="1d7Fn5Htbd$" role="3clFbG">
             <node concept="37vLTw" id="1d7Fn5HtaiD" role="2Oq$k0">
@@ -1463,79 +1437,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1d7Fn5Ht8Qm" role="3cqZAp" />
-        <node concept="3clFbF" id="2iVRiibEnoV" role="3cqZAp">
-          <node concept="2OqwBi" id="2iVRiibEnoW" role="3clFbG">
-            <node concept="37vLTw" id="2iVRiibEnoX" role="2Oq$k0">
-              <ref role="3cqZAo" node="2iVRiibsj2I" resolve="msg" />
-            </node>
-            <node concept="liA8E" id="2iVRiibEnoY" role="2OqNvi">
-              <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
-              <node concept="2ShNRf" id="2iVRiibEnoZ" role="37wK5m">
-                <node concept="1pGfFk" id="2iVRiibEnp0" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
-                  <node concept="Rm8GO" id="2iVRiibEnp1" role="37wK5m">
-                    <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                    <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
-                  </node>
-                  <node concept="3cpWs3" id="2iVRiibEnp2" role="37wK5m">
-                    <node concept="2OqwBi" id="2iVRiibEnp3" role="3uHU7w">
-                      <node concept="2OqwBi" id="2iVRiibEnp4" role="2Oq$k0">
-                        <node concept="37vLTw" id="2iVRiibEnp5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2iVRiibrErb" resolve="RT_Petrinet" />
-                        </node>
-                        <node concept="3TrEf2" id="2iVRiibEnp6" role="2OqNvi">
-                          <ref role="3Tt5mk" to="m6ps:2iVRiibhRdi" resolve="instanceOf" />
-                        </node>
-                      </node>
-                      <node concept="3Tsc0h" id="2iVRiibEnp7" role="2OqNvi">
-                        <ref role="3TtcxE" to="m6ps:7RBOOWUvx7y" resolve="elements" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="2iVRiibEnp8" role="3uHU7B">
-                      <property role="Xl_RC" value="Petrinet Instance:" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2iVRiibD4Tx" role="3cqZAp">
-          <node concept="2OqwBi" id="2iVRiibD4Ty" role="3clFbG">
-            <node concept="37vLTw" id="2iVRiibD4Tz" role="2Oq$k0">
-              <ref role="3cqZAo" node="2iVRiibsj2I" resolve="msg" />
-            </node>
-            <node concept="liA8E" id="2iVRiibD4T$" role="2OqNvi">
-              <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
-              <node concept="2ShNRf" id="2iVRiibD4T_" role="37wK5m">
-                <node concept="1pGfFk" id="2iVRiibD4TA" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
-                  <node concept="Rm8GO" id="2iVRiibD4TB" role="37wK5m">
-                    <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
-                    <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
-                  </node>
-                  <node concept="3cpWs3" id="2iVRiibD6vY" role="37wK5m">
-                    <node concept="2OqwBi" id="2iVRiibEqRr" role="3uHU7w">
-                      <node concept="37vLTw" id="2iVRiibD7iJ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2iVRiibrErb" resolve="RT_Petrinet" />
-                      </node>
-                      <node concept="3Tsc0h" id="2iVRiibErPW" role="2OqNvi">
-                        <ref role="3TtcxE" to="m6ps:2iVRiibhRo2" resolve="rt_elements" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="2iVRiibD4TC" role="3uHU7B">
-                      <property role="Xl_RC" value="RT elements: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2iVRiibD4Fb" role="3cqZAp" />
-        <node concept="3clFbH" id="2iVRiibD4ar" role="3cqZAp" />
         <node concept="3clFbF" id="2iVRiibs_VW" role="3cqZAp">
           <node concept="2OqwBi" id="2iVRiibs_VX" role="3clFbG">
             <node concept="37vLTw" id="2iVRiibs_VY" role="2Oq$k0">
@@ -1551,8 +1452,26 @@
                     <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
                     <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                   </node>
-                  <node concept="Xl_RD" id="2iVRiibs_W3" role="37wK5m">
-                    <property role="Xl_RC" value="Starting Runtime ..." />
+                  <node concept="3cpWs3" id="7w47ULZo7Aw" role="37wK5m">
+                    <node concept="Xl_RD" id="7w47ULZo59Y" role="3uHU7w">
+                      <property role="Xl_RC" value=" ..." />
+                    </node>
+                    <node concept="3cpWs3" id="7w47ULZo59J" role="3uHU7B">
+                      <node concept="Xl_RD" id="2iVRiibs_W3" role="3uHU7B">
+                        <property role="Xl_RC" value="Running Petrinet " />
+                      </node>
+                      <node concept="2OqwBi" id="7w47ULZo7Yg" role="3uHU7w">
+                        <node concept="2OqwBi" id="7w47ULZo7Yh" role="2Oq$k0">
+                          <node concept="2WthIp" id="7w47ULZo7Yi" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="7w47ULZo7Yj" role="2OqNvi">
+                            <ref role="2WH_rO" node="2iVRiibowT9" resolve="sNode" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7w47ULZo7Yk" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1567,34 +1486,54 @@
             </node>
             <node concept="2qgKlT" id="2iVRiibs1cU" role="2OqNvi">
               <ref role="37wK5l" to="56pr:2iVRiibipve" resolve="run" />
+              <node concept="37vLTw" id="7w47ULZo_HV" role="37wK5m">
+                <ref role="3cqZAo" node="2iVRiibsj2I" resolve="msg" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="2iVRiibsBgr" role="3cqZAp" />
-        <node concept="3clFbF" id="2iVRiibsBrc" role="3cqZAp">
-          <node concept="2OqwBi" id="2iVRiibsBrd" role="3clFbG">
-            <node concept="37vLTw" id="2iVRiibsBre" role="2Oq$k0">
+        <node concept="3clFbF" id="EFGmKI_aej" role="3cqZAp">
+          <node concept="2OqwBi" id="EFGmKI_aek" role="3clFbG">
+            <node concept="37vLTw" id="EFGmKI_ael" role="2Oq$k0">
               <ref role="3cqZAo" node="2iVRiibsj2I" resolve="msg" />
             </node>
-            <node concept="liA8E" id="2iVRiibsBrf" role="2OqNvi">
+            <node concept="liA8E" id="EFGmKI_aem" role="2OqNvi">
               <ref role="37wK5l" to="et5u:~IMessageHandler.handle(jetbrains.mps.messages.IMessage)" resolve="handle" />
-              <node concept="2ShNRf" id="2iVRiibsBrg" role="37wK5m">
-                <node concept="1pGfFk" id="2iVRiibsBrh" role="2ShVmc">
+              <node concept="2ShNRf" id="EFGmKI_aen" role="37wK5m">
+                <node concept="1pGfFk" id="EFGmKI_aeo" role="2ShVmc">
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="et5u:~Message.&lt;init&gt;(jetbrains.mps.messages.MessageKind,java.lang.String)" resolve="Message" />
-                  <node concept="Rm8GO" id="2iVRiibsBri" role="37wK5m">
+                  <node concept="Rm8GO" id="EFGmKI_aep" role="37wK5m">
                     <ref role="Rm8GQ" to="et5u:~MessageKind.INFORMATION" resolve="INFORMATION" />
                     <ref role="1Px2BO" to="et5u:~MessageKind" resolve="MessageKind" />
                   </node>
-                  <node concept="Xl_RD" id="2iVRiibsBrj" role="37wK5m">
-                    <property role="Xl_RC" value="Runtime finished!" />
+                  <node concept="3cpWs3" id="EFGmKI_aeq" role="37wK5m">
+                    <node concept="Xl_RD" id="EFGmKI_aer" role="3uHU7w">
+                      <property role="Xl_RC" value=" ..." />
+                    </node>
+                    <node concept="3cpWs3" id="EFGmKI_aes" role="3uHU7B">
+                      <node concept="Xl_RD" id="EFGmKI_aet" role="3uHU7B">
+                        <property role="Xl_RC" value="Finished Petrinet " />
+                      </node>
+                      <node concept="2OqwBi" id="EFGmKI_aeu" role="3uHU7w">
+                        <node concept="2OqwBi" id="EFGmKI_aev" role="2Oq$k0">
+                          <node concept="2WthIp" id="EFGmKI_aew" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="EFGmKI_aex" role="2OqNvi">
+                            <ref role="2WH_rO" node="2iVRiibowT9" resolve="sNode" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="EFGmKI_aey" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getName()" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2iVRiibsBgt" role="3cqZAp" />
       </node>
     </node>
     <node concept="1DS2jV" id="2iVRiibowT9" role="1NuT2Z">

@@ -58,9 +58,6 @@
       <node concept="1BlLBn" id="6mCZXi$8zna" role="1BlL$W">
         <ref role="1BlLBg" node="6mCZXi$8zme" resolve="p1" />
       </node>
-      <node concept="1BlLBn" id="6mCZXi$8znn" role="1BlL$W">
-        <ref role="1BlLBg" node="6mCZXi$8zm6" resolve="p3" />
-      </node>
       <node concept="1BlLBn" id="6mCZXi$8znu" role="1BlL$Y">
         <ref role="1BlLBg" node="6mCZXi$8zmp" resolve="p6" />
       </node>
